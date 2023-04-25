@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+b {
+    font-size: 70px;
+    color: #7f00ff;
+}
+
+.navItems {
+    display: flex;
+    z-index: 111;
+}
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+    z-index: 111;
+}
+
+.navItems li a {
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    z-index: 111;
+}
+
+.links a {
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+    z-index: 111;
+}
+
+.links {
+    z-index: 111;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: left;
+    align-items: left;
+    padding: 0 10%;
+    overflow: hidden;
+    margin-top: 11%;
+}
+
+.cols {
+    width: 70%;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+
+h1 {
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #3d535f;
+}
+
+.multiText {
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+p {
+    display: block;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+
+.wrapper::before {
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object1 5s linear infinite;
+    filter: blur(3px);
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    height: 900px;
+    width: 900px;
+    border-radius: 50%;
+    right: -15%;
+    top: 50%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object2 5s linear infinite;
+    filter: blur(3px);
+}
+
+.cols::after {
+    position: absolute;
+    content: '';
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object3 5s linear infinite;
+    filter: blur(3px);
+    left: 60%;
+    top: -1%;
+    z-index: 5;
+}
+
+@keyframes object1 {
+    50% {
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2 {
+    50% {
+        right: -13%;
+        top: 49%;
+    }
+}
+@keyframes object3 {
+    50% {
+        left: 58%;
+        top: 2%;
+    }
+}
+
+.cols0 {
+    z-index: 5;
+    width: 70%;
+}
+
+.animation:before {
+    content: '';
+    animation: animate1 infinite 8s;
+    color: #7f00ff;
+}
+
+@keyframes animate1 {
+
+    0% {
+        content: 'Developer';
+    }
+    25% {
+        content: 'Schüler'
+    }
+    50% {
+        content: 'Freund'
+    }
+    75% {
+        content: 'Gamer'
+    }
+    100% {
+        content: 'Developer';
+    }
+
+}
+
+.fa-eye {
+    font-size: 25px;
+    margin-left: 10px;
+    color: #7f00ff;
+    width: 29px;
+}
+
+div.black .fa-eye {
+    color: #f3f5f8;
+}
+
+div.white .fa-eye {
+    color: #7f00ff;
+}
+
+div.black .logo {
+    color: #f3f5f8
+}
+
+div.white .logo {
+    color: #3d535f;
+}
+
+div.black b {
+    color: #f3f5f8;
+}
+
+div.white b {
+    color: #7f00ff;
+}
+
+div.black .navItems li a {
+    color: #f3f5f8;
+    transition: all 0.3s;
+}
+
+div.white .navItems li a {
+    color: #3d535f;
+    transition: all 0.3s;
+}
+
+div.black .navItems li:hover a {
+    color: #7f00ff;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px #7f00ff;
+    transition: all 0.3s;
+}
+
+div.white .navItems li:hover a {
+    color: #7f00ff;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px #7f00ff;
+    transition: all 0.3s;
+}
+
+div.black .links a {
+    color: #f3f5f8;
+    transition: all 0.3s;
+}
+
+div.white .links a {
+    color : #3d535f;
+    transition: all 0.3s;
+}
+
+div.black .links a:hover {
+    color: #7f00ff;
+    font-size: 35px;
+    transition: font-size 0.3s;
+}
+
+div.white .links a:hover {
+    color: #7f00ff;
+    font-size: 35px;
+    transition: font-size 0.3s;
+}
+
+div.black .bg {
+    background-color: #1e1e1e;
+}
+
+div.white .bg {
+    background-color: white;
+}
+
+div.black .topline {
+    color: #e0e3e6;
+}
+
+div.white .topline {
+    color: #3d535f;
+}
+
+div.black h1 {
+    color: #e0e3e6;
+}
+
+div.white h1 {
+    color: #3d535f;
+}
+
+div.black p {
+    color: #e0e3e6;
+}
+
+div.white p {
+    color: #3d535f;
+}
+
+div.black .wrapper::after {
+    background: linear-gradient(45deg, #1e1e1e, blue);
+}
+
+div.white .wrapper::after {
+    background: linear-gradient(45deg, #7f00ff, pink);
+}
+
+div.white .wrapper::before {
+    background: linear-gradient(45deg, #7f00ff, pink);
+}
+
+div.black .wrapper::before {
+    background: linear-gradient(45deg, #1e1e1e, blue);
+}
+
+div.white .cols::after {
+    background: linear-gradient(45deg, #7f00ff, pink);
+}
+
+div.black .cols::after {
+    background: linear-gradient(45deg, #1e1e1e, blue);
+}
+
+.topline {
+    color: #3d535f;
+}
+
+.multiText {
+    color: #7f00ff;
+}
+
+div.black span {
+    color: #8f8f8f;
+}
+
+div.black textarea {
+    background-color: #8f8f8f;
+}
+
+
+
+.inputbox {
+    position: relative;
+    width: 196px;
+}
+
+.emaili {
+    width: 420px;
+}
+
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+    color: #7f00ff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #7f00ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+height: 44px;
+}
+
+.firstline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.secondline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.thirdline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+input[type=text],
+input[type=email] {
+    color: white;
+}
+
+
+#message {
+    outline: #7f00ff 2px;
+    border: 2px solid #7f00ff;
+    padding: 10px 0px 0px 15px;
+    font-size: 16px;
+    color: #000;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+}
+
+.col-md-8 {
+    font-size: 20px;
+    color: #8f8f8f;
+}
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    transform: scale(150%);
+    margin-top: 40px;
+    margin-left: 465px;
+}
+
+.shadow__btn {
+    background: #7f00ff;
+    box-shadow: 0 0 25px #7f00ff;
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px #7f00ff,
+                0 0 25px #7f00ff,
+                0 0 50px #7f00ff,
+                0 0 100px #7f00ff;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e0e3e6;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #303136;
+}
+
+input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+.mode {
+    margin-left: 25px;
+}
