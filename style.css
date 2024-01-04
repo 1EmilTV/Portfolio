@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #c0c5b8;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    left: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    background-color: #4d5c4b;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #e8eae5;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navItems {
+    display: flex;
+}
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a {
+    font-size: 25px;
+    color: #e8eae5;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+
+.links a {
+    font-size: 30px;
+    color: #e8eae5;
+    margin: 25px 10px;
+    transition: all .3s;
+}
+
+.links a:hover {
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.navItems li:hover a {
+    color: #000000;
+    text-shadow: 0px 0px 10px #000000;
+    transition: all 0.3s;
+}
+
+._1stsec {
+    background-color: #c0c5b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91.2vh;
+}
+
+._2ndsec {
+    height: 96vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wave {
+    transform: scale(300%);
+}
+
+._1sttext {
+    width: 50%;
+    margin: 2%;
+    font-size: 200%;
+    color: #000000;
+}
+
+b {
+    font-size: 300%;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #7d957e; /* Set a background color */
+    color: #e8eae5; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    aspect-ratio: 1/1;
+}
+
+.fa-solid {
+    font-size: 50px;
+}
+
+#myBtn:hover {
+    background-color: #758a76; /* Add a dark-grey background on hover */
+}
+
+#myBtn:hover i {
+    transform: translateY(-4px);
+}
+
+#myBtn i {
+    transition: all .2s ease-out;
+}
+
+#clock {
+    position: fixed; 
+    bottom: 20px;
+    left: 30px;
+    color: #000000;
+    font-size: 50px;
+    font-family: 'ADLaM Display', sans-serif;
+}
