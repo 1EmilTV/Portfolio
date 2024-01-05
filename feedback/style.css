@@ -246,6 +246,13 @@ input:valid ~ label.nachnameLabel {
     color: #c0c5b8;
 }
 
+input:focus ~ label.nachnameLabel {
+    transform: translateY(50%) scale(0.8) translateX(-13px);
+    background-color: #7d957e;
+    padding: 0 .2em;
+    color: #c0c5b8;
+}
+
 .lasttwo {
     display: flex;
     align-items: center;
