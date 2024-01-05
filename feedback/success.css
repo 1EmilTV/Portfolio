@@ -82,11 +82,15 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8vh;
+    color: white;
     height: 91.2vh;
 }
 
 ._2ndsec {
-    height: 96vh;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -145,4 +149,46 @@ b {
     color: #000000;
     font-size: 50px;
     font-family: 'ADLaM Display', sans-serif;
+}
+
+.back {
+    font-size: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px groove #758a76;
+    background-color: #7d957e;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 5px 5px 10px #000000;
+    transform: translateY(0px);
+    transition: all .2s linear;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.back:hover a {
+    color: black;
+    transition: all .2s linear;
+}
+
+.back:hover p {
+    transform: translateY(-2px);
+    transition: all .2s linear;
+}
+
+.back:hover {
+    color: black;
+    background-color: #b1d3b3;
+    box-shadow: 7px 7px 15px #000000;
+    transition: all .2s linear;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all .2s linear;
+}
+
+p {
+    transition: all .2s linear;
 }
