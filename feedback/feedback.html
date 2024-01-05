@@ -76,7 +76,14 @@
     </div>
     <div class="contactform">
     <div class="contact-container">
-        <form name="Kontakt" netlify>
+        <form name="Kontakt" method="POST" netlify-honeypot="bot-field" data-netlify="true" netlify>
+            <p class="hidden">
+                <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+            </p>
+            <h2 class="title">Kontaktiere Mich!</h2>
+                    <hr>
             <div class="input-group">
                 <input required type="text" name="Vorname" autocomplete="off" class="input">
                 <label class="user-label">Vorname</label>
