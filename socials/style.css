@@ -75,7 +75,7 @@ nav {
 }
 
 .links p a {
-    font-size: 60spx;
+    font-size: 60px;
     color: #e8eae5;
     transition: all .3s;
     text-decoration: none;
@@ -191,6 +191,7 @@ b {
         display: flex;
         flex-direction: column;
         height: 100%;
+        width: 100%;
     }
 
     .show {
