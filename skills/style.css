@@ -14,7 +14,6 @@ html {
 
 body {
     background-color: #c0c5b8;
-    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -262,6 +261,7 @@ a {
         display: flex;
         flex-direction: column;
         height: 100%;
+        width: 100%;
     }
 
     .show {
