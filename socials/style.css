@@ -187,6 +187,14 @@ b {
 }
 
 @media screen and (max-width: 768px) {
+    .right {
+        gap: 25px;
+    }
+    
+    .left {
+        gap: 25px;
+    }
+    
     nav {
         display: flex;
         flex-direction: column;
