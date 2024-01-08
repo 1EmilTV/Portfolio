@@ -191,6 +191,7 @@ b {
         display: none;
         animation: showMenu .4s ease forwards;
         transition: all .4s ease;
+        margin-left: 5px;
     }
 
     .fa-bars {
@@ -199,7 +200,7 @@ b {
         cursor: pointer;
         color: #e8eae5;
         font-size: 45px;
-        margin-top: 5px;
+        align-items: center;
     }
 
     .fa-brands {
