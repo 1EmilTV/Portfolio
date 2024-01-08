@@ -171,10 +171,6 @@ b {
 }
 
 @media screen and (max-width: 768px) {
-    * {
-        overflow-x: hidden;
-    }
-
     nav {
         display: flex;
         flex-direction: column;
