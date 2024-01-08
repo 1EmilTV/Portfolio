@@ -191,7 +191,9 @@ b {
         display: none;
         animation: showMenu .4s ease forwards;
         transition: all .4s ease;
-        margin-left: 5px;
+        margin-left: -25px;
+        align-items: center;
+        justify-content: center;
     }
 
     .fa-bars {
@@ -237,5 +239,15 @@ b {
 
     #clock {
         display: none;
+    }
+
+    ._1sttext {
+        width: 92%;
+        margin: 5%;
+        font-size: 25px;
+    }
+
+    b {
+        font-size: 100px;
     }
 }
