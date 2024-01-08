@@ -159,10 +159,6 @@ b {
         height: 100%;
     }
 
-    .close {
-        display: none;
-    }
-
     .show {
         animation: showMenu .4s ease forwards;
         display: none;
@@ -181,10 +177,18 @@ b {
     }
 
     .navItems {
-        display: flex;
+        top: -100%;
+        display: none;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        animation: showMenu .4s ease forwards;
+    }
+
+    .links {
+        display: none;
+        top: -100%;
+        animation: showMenu .4s ease forwards;
     }
 
     .fa-bars {
@@ -193,6 +197,7 @@ b {
         cursor: pointer;
         color: #e8eae5;
         font-size: 45px;
+        margin-top: 0px;
     }
 
     .fa-brands {

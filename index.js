@@ -30,8 +30,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-const menu = document.getElementById('sidebar');
-const btn = document.getElementById('close-btn');
+const menu = document.getElementsByClassName("menu");
+const btn = document.getElementById("close-btn");
 
-btn.addEventListener('click')
+btn.addEventListener('click', function() {
+    menu.style.display = 'block';
+});
 
