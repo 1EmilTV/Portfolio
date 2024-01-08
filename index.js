@@ -29,3 +29,9 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const menu = document.getElementById('sidebar');
+const btn = document.getElementById('close-btn');
+
+btn.addEventListener('click')
+

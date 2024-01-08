@@ -122,7 +122,7 @@ b {
     aspect-ratio: 1/1;
 }
 
-.fa-solid {
+.fa-arrow-up {
     font-size: 50px;
 }
 
@@ -145,4 +145,83 @@ b {
     color: #000000;
     font-size: 50px;
     font-family: 'ADLaM Display', sans-serif;
+}
+
+.fa-bars {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .show {
+        animation: showMenu .4s ease forwards;
+        display: none;
+        top: -100%;
+    }
+
+    @keyframes showMenu {
+        to {
+            top: 0;
+        }
+    }
+
+    .logo {
+        justify-content: center;
+        margin-left: 125px;
+    }
+
+    .navItems {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fa-bars {
+        display: flex;
+        margin-left: 80px;
+        cursor: pointer;
+        color: #e8eae5;
+        font-size: 45px;
+    }
+
+    .fa-brands {
+        margin-left: 45px;
+        margin-right: 25px;
+    }
+
+    .top-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: -75px;
+    }
+
+    .wave {
+        transform: scale(150%);
+    }
+
+    #clock {
+        display: none;
+    }
 }
