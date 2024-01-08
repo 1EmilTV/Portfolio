@@ -329,6 +329,7 @@ input:focus ~ label.nachnameLabel {
     }
 
     .fa-bars {
+        display: flex;
         margin-left: 80px;
         cursor: pointer;
         color: #e8eae5;
