@@ -30,10 +30,18 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-const menu = document.getElementsByClassName("menu");
+const menuTop = document.getElementById("menuTop");
+const menuBottom = document.getElementById("menuBottom");
 const btn = document.getElementById("close-btn");
 
-btn.addEventListener('click', function() {
-    menu.style.display = 'block';
+btn.addEventListener('click', () => {
+    if(menuTop.style.display == 'flex' && menuBottom.style.display == 'block') {
+        menuTop.style.display = 'none';
+        menuBottom.style.display = 'none';
+    }
+    else {
+        menuTop.style.display = 'flex';
+        menuBottom.style.display = 'block';
+    }
 });
 
