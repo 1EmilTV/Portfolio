@@ -200,9 +200,12 @@ b {
         cursor: pointer;
         color: #e8eae5;
         font-size: 45px;
-        align-items: center;
-        justify-content: center;
         margin-top: 5px;
+    }
+
+    .close {
+        display: flex;
+        align-items: center;
     }
 
     .fa-brands {
