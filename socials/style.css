@@ -162,3 +162,108 @@ b {
     font-size: 50px;
     font-family: 'ADLaM Display', sans-serif;
 }
+
+.fa-bars {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .show {
+        animation: showMenu .4s ease forwards;
+        display: none;
+        top: -100%;
+    }
+
+    @keyframes showMenu {
+        to {
+            top: 0;
+        }
+    }
+
+    .logo {
+        justify-content: center;
+        margin-left: 125px;
+    }
+
+    .navItems {
+        top: -100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        animation: showMenu .4s ease forwards;
+        transition: all .4s ease;
+    }
+
+    .fa-bars {
+        display: flex;
+        margin-left: 80px;
+        cursor: pointer;
+        color: #e8eae5;
+        font-size: 45px;
+        margin-top: 5px;
+    }
+
+    .close {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .fa-brands {
+        margin-left: 45px;
+        margin-right: 25px;
+    }
+
+    .top-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: -75px;
+    }
+
+    .wave {
+        transform: scale(150%);
+    }
+
+    #clock {
+        display: none;
+    }
+
+    ._1stsec {
+        width: 100%;
+        height: 100%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+}

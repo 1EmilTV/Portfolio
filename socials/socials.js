@@ -29,3 +29,15 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const menuTop = document.getElementById("menuTop");
+const btn = document.getElementById("close-btn");
+
+btn.addEventListener('click', () => {
+    if(menuTop.style.display == 'flex') {
+        menuTop.style.display = 'none';
+    }
+    else {
+        menuTop.style.display = 'flex';
+    }
+});

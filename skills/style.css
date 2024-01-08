@@ -232,3 +232,128 @@ a {
     transform: translateY(-2px);
     transition: all .2s linear;
 }
+
+.fa-bars {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .show {
+        animation: showMenu .4s ease forwards;
+        display: none;
+        top: -100%;
+    }
+
+    @keyframes showMenu {
+        to {
+            top: 0;
+        }
+    }
+
+    .logo {
+        justify-content: center;
+        margin-left: 125px;
+    }
+
+    .navItems {
+        top: -100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        animation: showMenu .4s ease forwards;
+        transition: all .4s ease;
+    }
+
+    .links {
+        top: -100%;
+        display: none;
+        animation: showMenu .4s ease forwards;
+        transition: all .4s ease;
+        margin-left: -25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa-bars {
+        display: flex;
+        margin-left: 80px;
+        cursor: pointer;
+        color: #e8eae5;
+        font-size: 45px;
+        margin-top: 5px;
+    }
+
+    .close {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .fa-brands {
+        margin-left: 45px;
+        margin-right: 25px;
+    }
+
+    .top-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: -75px;
+    }
+
+    .wave {
+        transform: scale(150%);
+    }
+
+    #clock {
+        display: none;
+    }
+
+    .oneText {
+        margin: 5%;
+        width: 92%;
+        font-size: 25px;
+    }
+
+    .twoHeader {
+        margin: 5%;
+        width: 92%;
+        font-size: 50px;
+    }
+
+    .twoText {
+        margin: 5%;
+        width: 92%;
+        font-size: 25px;
+    }
+
+    .threeHeader {
+        margin-left: 5%;
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .threeText {
+        margin: 5%;
+        width: 92%;
+        font-size: 25px;
+    }
+    
+}

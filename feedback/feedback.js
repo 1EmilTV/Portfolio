@@ -18,7 +18,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    mybutton.style.display = "none";
 } else {
     mybutton.style.display = "none";
 }
@@ -29,3 +29,18 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const menuTop = document.getElementById("menuTop");
+const menuBottom = document.getElementById("menuBottom");
+const btn = document.getElementById("close-btn");
+
+btn.addEventListener('click', () => {
+    if(menuTop.style.display == 'flex' && menuBottom.style.display == 'block') {
+        menuTop.style.display = 'none';
+        menuBottom.style.display = 'none';
+    }
+    else {
+        menuTop.style.display = 'flex';
+        menuBottom.style.display = 'block';
+    }
+});
