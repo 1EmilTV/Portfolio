@@ -34,6 +34,8 @@ const menuTop = document.getElementById("menuTop");
 const menuBottom = document.getElementById("menuBottom");
 const btn = document.getElementById("close-btn");
 
+btn.style.display = 'none';
+
 btn.addEventListener('click', () => {
     if(menuTop.style.display == 'flex' && menuBottom.style.display == 'block') {
         menuTop.style.display = 'none';
