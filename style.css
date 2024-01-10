@@ -184,6 +184,11 @@ b {
         width: 100%;
     }
 
+    ._2ndsec {
+        background-image: none;
+        background-color: #c0c5b8;
+    }
+
     .show {
         animation: showMenu .4s ease forwards;
         display: none;

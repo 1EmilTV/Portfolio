@@ -316,7 +316,8 @@ input:focus ~ label.nachnameLabel {
     }
 
     body {
-        background-image: url(/layered-waves-haikei\ \(2\).svg);
+        background-image: none;
+        background-color: #c0c5b8;
     }
 
     .show {
