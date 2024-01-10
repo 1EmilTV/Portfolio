@@ -384,4 +384,12 @@ a {
         font-size: 25px;
     }
     
+    p {
+        text-align: center;
+    }
+
+    .redirect1 {
+        margin-bottom: 25px;
+    }
+
 }
