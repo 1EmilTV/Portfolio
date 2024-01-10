@@ -193,6 +193,15 @@ b {
         font-size: 50px;
     }
 
+    html, body {
+        margin: 0;
+        height: 100%;
+    }
+
+    body {
+        background-image: url(/layered-waves-haikei\ \(2\).svg);
+    }
+
     nav {
         display: flex;
         flex-direction: column;

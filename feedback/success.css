@@ -228,6 +228,15 @@ p {
         width: 100%;
     }
 
+    html, body {
+        margin: 0;
+        height: 100%;
+    }
+
+    body {
+        background-image: url(/layered-waves-haikei\ \(2\).svg);
+    }
+
     .show {
         animation: showMenu .4s ease forwards;
         display: none;
