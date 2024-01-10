@@ -40,9 +40,6 @@
             </div>
         </nav>
     </div>
-    <div class="sec">
-        
-    </div>
     <button onclick="topFunction()" id="myBtn" title="Zurück zum Start"><i class="fa-solid fa-arrow-up"></i></button>
     <div class="container">
         <div class="clock">
@@ -80,37 +77,37 @@
         -->
     </div>
     <div class="contactform">
-    <div class="contact-container">
-        <form name="Kontakt" method="POST" netlify-honeypot="bot-field" data-netlify="true" netlify action="/feedback/success.html">
-            <p class="hidden">
-                <label>
-                    Don’t fill this out if you’re human: <input name="bot-field"/>
-                </label>
-            </p>
-            <h2 class="title">Kontaktiere Mich!</h2>
-                    <hr>
-            <div class="input-group">
-                <input required type="text" name="Vorname" autocomplete="off" class="input">
-                <label class="user-label">Vorname</label>
-            </div>
-            <div class="input-group">
-                <input  required="off" type="text" name="Nachname" autocomplete="off" class="input">
-                <label class="user-label nachnameLabel">Nachname (optional)</label>
-            </div>
-            <div class="input-group">
-                <input required type="email" name="email" autocomplete="off" class="input" id="emaill">
-                <label class="user-label">E-Mail</label>
-            </div>
-            <div class="input-group">
-                <input required type="text" name="Betreff" autocomplete="off" class="input">
-                <label class="user-label">Betreff</label>
-            </div>
-            <div class="lasttwo">
-                <textarea name="Nachricht" placeholder="Deine Nachricht" autocomplete="off" required class="contact-inputs textfeld"></textarea>
-                <button type="submit" class="submitButton" onclick="continueornot()">Senden</button>
-            </div>
-        </form>
-    </div>
+        <div class="contact-container">
+            <form name="Kontakt" method="POST" netlify-honeypot="bot-field" data-netlify="true" netlify action="/feedback/success.html">
+                <p class="hidden">
+                    <label>
+                        Don’t fill this out if you’re human: <input name="bot-field"/>
+                    </label>
+                </p>
+                <h2 class="title">Kontaktiere Mich!</h2>
+                        <hr>
+                <div class="input-group">
+                    <input required type="text" name="Vorname" autocomplete="off" class="input">
+                    <label class="user-label">Vorname</label>
+                </div>
+                <div class="input-group">
+                    <input  required="off" type="text" name="Nachname" autocomplete="off" class="input">
+                    <label class="user-label nachnameLabel">Nachname (optional)</label>
+                </div>
+                <div class="input-group">
+                    <input required type="email" name="email" autocomplete="off" class="input" id="emaill">
+                    <label class="user-label">E-Mail</label>
+                </div>
+                <div class="input-group">
+                    <input required type="text" name="Betreff" autocomplete="off" class="input">
+                    <label class="user-label">Betreff</label>
+                </div>
+                <div class="lasttwo">
+                    <textarea name="Nachricht" placeholder="Deine Nachricht" autocomplete="off" required class="contact-inputs textfeld"></textarea>
+                    <button type="submit" class="submitButton" onclick="continueornot()">Senden</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

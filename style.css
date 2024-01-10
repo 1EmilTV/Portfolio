@@ -107,6 +107,7 @@ nav {
 ._2ndsec {
     height: 96vh;
     font-family: 'Poppins', sans-serif;
+    background-image: url(layered-waves-haikei\ \(2\).svg);
 }
 
 .wave {
@@ -164,6 +165,7 @@ b {
     color: #000000;
     font-size: 50px;
     font-family: 'ADLaM Display', sans-serif;
+    z-index: 999;
 }
 
 .fa-bars {

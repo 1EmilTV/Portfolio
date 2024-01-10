@@ -97,7 +97,6 @@ nav {
 }
 
 ._1stsec {
-    background-color: #c0c5b8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,6 +106,7 @@ nav {
     font-size: 8vh;
     color: white;
     height: 91.2vh;
+    background-image: url(/layered-waves-haikei\ \(2\).svg);
 }
 
 ._2ndsec {
@@ -328,6 +328,10 @@ p {
 
     .bottom {
         font-size: 20px;
+    }
+
+    button {
+        outline: none;
     }
 
 }

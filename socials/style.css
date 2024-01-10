@@ -80,7 +80,7 @@ nav {
 
 .links p a {
     font-size: 60px;
-    color: #e8eae5;
+    color: #000000;
     transition: all .3s;
     text-decoration: none;
 }
@@ -114,19 +114,15 @@ nav {
 }
 
 ._1stsec {
-    background-color: #c0c5b8;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 91.2vh;
+    background-image: url(/layered-waves-haikei\ \(2\).svg);
 }
 
 ._2ndsec {
     font-family: 'Poppins', sans-serif;
-}
-
-.wave {
-    transform: scale(300%);
 }
 
 ._1sttext {
@@ -189,6 +185,8 @@ b {
 .close {
     display: none;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .links p a {
@@ -293,5 +291,9 @@ b {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
+    }
+
+    button {
+        outline: none;
     }
 }
