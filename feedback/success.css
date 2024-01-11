@@ -228,6 +228,10 @@ p {
         width: 100%;
     }
 
+    .links a {
+        text-align: center;
+    }
+
     html, body {
         margin: 0;
         height: 100%;
