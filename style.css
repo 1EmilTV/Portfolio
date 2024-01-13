@@ -273,7 +273,8 @@ b {
 
     ._1sttext {
         width: 92%;
-        margin: 5%;
+        margin-left: 5%;
+        margin-right: 5%
         font-size: 25px;
         margin-bottom: 25px;
     }
