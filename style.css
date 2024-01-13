@@ -187,6 +187,7 @@ b {
     ._2ndsec {
         background-image: none;
         background-color: #c0c5b8;
+        margin-bottom: 50px;
     }
 
     .show {
@@ -276,7 +277,7 @@ b {
         margin-left: 5%;
         margin-right: 5%
         font-size: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 50px
     }
 
     b {
