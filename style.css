@@ -119,7 +119,6 @@ nav {
     margin: 2%;
     font-size: 200%;
     color: #000000;
-    margin-bottom: 5%;
 }
 
 b {
@@ -276,6 +275,7 @@ b {
         width: 92%;
         margin: 5%;
         font-size: 25px;
+        margin-bottom: 25px;
     }
 
     b {
