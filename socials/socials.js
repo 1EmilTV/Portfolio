@@ -33,11 +33,22 @@ function topFunction() {
 const menuTop = document.getElementById("menuTop");
 const btn = document.getElementById("close-btn");
 
-btn.addEventListener('click', () => {
-    if(menuTop.style.display == 'flex') {
-        menuTop.style.display = 'none';
+if(window.screen.width <= 768) {
+    menuTop.style.visibility = 'hidden';
+    menuTop.style.opacity = '0';
+    menuTop.style.height = '0';
+}
+
+
+btn.addEventListener('click', function(){
+    if(menuTop.style.visibility == 'hidden'){
+        menuTop.style.visibility = 'visible';
+        menuTop.style.opacity = '1';
+        menuTop.style.height = '100%';
     }
-    else {
-        menuTop.style.display = 'flex';
+    else{
+        menuTop.style.visibility = 'hidden';
+        menuTop.style.opacity = '0';
+        menuTop.style.height = '0';
     }
 });

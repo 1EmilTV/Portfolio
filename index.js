@@ -34,14 +34,42 @@ const menuTop = document.getElementById("menuTop");
 const menuBottom = document.getElementById("menuBottom");
 const btn = document.getElementById("close-btn");
 
-btn.addEventListener('click', () => {
-    if(menuTop.style.display == 'flex' && menuBottom.style.display == 'block') {
-        menuTop.style.display = 'none';
-        menuBottom.style.display = 'none';
+if(window.screen.width <= 768) {
+    menuTop.style.visibility = 'hidden';
+    menuTop.style.opacity = '0';
+    menuTop.style.height = '0';
+    menuBottom.style.visibility = 'hidden';
+    menuBottom.style.opacity = '0';
+    menuBottom.style.height = '0';
+}
+
+btn.addEventListener('click', function(){
+    if(menuBottom.style.visibility == 'hidden' && menuTop.style.visibility == 'hidden'){
+        menuTop.style.visibility = 'visible';
+        menuTop.style.opacity = '1';
+        menuTop.style.height = '100%';
+        menuBottom.style.visibility = 'visible';
+        menuBottom.style.opacity = '1';
+        menuBottom.style.height = '100%';
     }
-    else {
-        menuTop.style.display = 'flex';
-        menuBottom.style.display = 'block';
+    else{
+        menuTop.style.visibility = 'hidden';
+        menuTop.style.opacity = '0';
+        menuTop.style.height = '0';
+        menuBottom.style.visibility = 'hidden';
+        menuBottom.style.opacity = '0';
+        menuBottom.style.height = '0';
     }
 });
+
+// btn.addEventListener('click', () => {
+//     if(menuTop.style.display == 'flex' && menuBottom.style.display == 'block') {
+//         menuTop.style.display = 'none';
+//         menuBottom.style.display = 'none';
+//     }
+//     else {
+//         menuTop.style.display = 'flex';
+//         menuBottom.style.display = 'block';
+//     }
+// });
 
