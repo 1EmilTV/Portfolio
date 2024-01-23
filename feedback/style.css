@@ -333,7 +333,7 @@ input:focus ~ label.nachnameLabel {
 
     .hamburger {
         display: flex;
-        margin-left: 100px;
+        margin-left: 15vw;
         cursor: pointer;
     }
     
@@ -379,8 +379,9 @@ input:focus ~ label.nachnameLabel {
     }
 
     .logo {
+        display: flex;
         justify-content: center;
-        margin-left: 37%;
+        margin-left: 30vw;
     }
 
     .navItems {
@@ -571,5 +572,15 @@ input:focus ~ label.nachnameLabel {
         background-color: #7d957e;
         padding: 0 .2em;
         color: #c0c5b8;
+    }
+}
+
+@media screen and (max-width: 430px) and (min-width: 428px) {
+    .hamburger {
+        margin-left: 22.5vw;
+    }
+
+    .logo {
+        margin-left: 35vw;
     }
 }

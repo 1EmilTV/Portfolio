@@ -202,7 +202,7 @@ b {
 
     .hamburger {
         display: flex;
-        margin-left: 100px;
+        margin-left: 15vw;
         cursor: pointer;
     }
     
@@ -274,8 +274,9 @@ b {
     }
 
     .logo {
+        display: flex;
         justify-content: center;
-        margin-left: 35%;
+        margin-left: 30vw;
     }
 
     .navItems {
@@ -353,5 +354,15 @@ b {
 
     button {
         outline: none;
+    }
+}
+
+@media screen and (max-width: 430px) and (min-width: 428px) {
+    .hamburger {
+        margin-left: 22.5vw;
+    }
+
+    .logo {
+        margin-left: 35vw;
     }
 }
