@@ -262,13 +262,8 @@ b {
         height: 0;
         visibility: hidden;
         opacity: 0;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr repeat(1, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+        display: block;
+        text-align: center;
     }
 
     .fa-bars {
@@ -332,6 +327,10 @@ b {
 @media screen and (max-width: 430px) and (min-width: 428px) {
     .hamburger {
         margin-left: 22.5vw;
+    }
+
+    .links {
+        text-align: center;
     }
 
     .logo {
