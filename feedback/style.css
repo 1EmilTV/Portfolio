@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: fit-content;
 }
 
 html {
@@ -14,6 +13,7 @@ html {
 
 body {
     background-image: url(/layered-waves-haikei\ \(2\).svg);
+    width: 100%;
 }
 
 body::-webkit-scrollbar {
