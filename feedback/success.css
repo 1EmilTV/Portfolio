@@ -68,6 +68,7 @@ nav {
 .navItems li {
     list-style: none;
     margin: 0 15px;
+    overflow-y: hidden;
 }
 
 .navItems li a {
@@ -327,13 +328,8 @@ p {
         height: 0;
         visibility: hidden;
         opacity: 0;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr repeat(1, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+        display: block;
+        text-align: center;
     }
 
     .fa-bars {
@@ -362,20 +358,7 @@ p {
         justify-content: center;
     }
 
-    .top {
-        display: flex;
-        justify-content: center;
-    }
-
-    .bottom {
-        display: flex;
-        justify-content: center;
-        margin-top: -75px;
-    }
-
-    .wave {
-        transform: scale(150%);
-    }
+    
 
     #clock {
         display: none;
@@ -385,12 +368,12 @@ p {
         width: 92%;
         margin-left: 5%;
         display: flex;
-        gap: 100px;
+        gap: 25px;
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 150px;
-        height: fit-content;
+        margin-top: 100px;
+        height: 500px;
     }
 
     .top {

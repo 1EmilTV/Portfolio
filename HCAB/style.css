@@ -63,11 +63,13 @@ nav {
 
 .navItems {
     display: flex;
+    overflow-y: hidden;
 }
 
 .navItems li {
     list-style: none;
     margin: 0 15px;
+    overflow-y: hidden;
 }
 
 .navItems li a {
