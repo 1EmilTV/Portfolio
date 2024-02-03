@@ -102,19 +102,35 @@ nav {
 
 ._1stsec {
     display: flex;
+    gap: 100px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
+    height: 100%;
+    background-image: url(layered-waves-haikei\ \(2\).svg);
+}
+
+#handball-tabelle {
+    margin-top: 50px;
+    margin-right: 200px;
     font-family: 'Poppins', sans-serif;
-    font-size: 8vh;
-    color: black;
-    height: 91.2vh;
-    background-image: url(/layered-waves-haikei\ \(2\).svg);
+}
+
+#handball-spielplan {
+    margin-top: 23px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tore {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin-right: 150px;
 }
 
 ._2ndsec {
+    height: 0;
     font-family: 'Poppins', sans-serif;
+    background-image: url(layered-waves-haikei\ \(2\).svg);
 }
 
 .wave {
@@ -122,7 +138,7 @@ nav {
 }
 
 ._1sttext {
-    width: 50%;
+    width: 75%;
     margin: 2%;
     font-size: 200%;
     color: #000000;
@@ -149,7 +165,7 @@ b {
     aspect-ratio: 1/1;
 }
 
-.fa-solid {
+.fa-arrow-up {
     font-size: 50px;
 }
 
@@ -172,51 +188,10 @@ b {
     color: #000000;
     font-size: 50px;
     font-family: 'ADLaM Display', sans-serif;
+    z-index: 999;
 }
 
-.back {
-    font-size: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    border: 2px groove #758a76;
-    background-color: #7d957e;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 5px 5px 10px #000000;
-    transform: translateY(0px);
-    transition: all .2s linear;
-    cursor: pointer;
-    transition: all .2s linear;
-}
-
-.back:hover a {
-    color: black;
-    transition: all .2s linear;
-}
-
-.back:hover p {
-    transform: translateY(-2px);
-    transition: all .2s linear;
-}
-
-.back:hover {
-    color: black;
-    background-color: #b1d3b3;
-    box-shadow: 7px 7px 15px #000000;
-    transition: all .2s linear;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    transition: all .2s linear;
-}
-
-p {
-    transition: all .2s linear;
-}
-
-.fa-bars {
+.hamburger {
     display: none;
 }
 
@@ -224,7 +199,7 @@ p {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) and (min-width: 320px) {
     nav {
         display: flex;
         flex-direction: column;
@@ -273,30 +248,10 @@ p {
         stroke-dashoffset: -32.42;
     }
 
-    .links a {
-        text-align: center;
-    }
-
-    html, body {
-        margin: 0;
-        height: 100%;
-    }
-
-    body {
+    ._2ndsec {
         background-image: none;
         background-color: #c0c5b8;
-    }
-
-    .show {
-        animation: showMenu .4s ease forwards;
-        display: none;
-        top: -100%;
-    }
-
-    @keyframes showMenu {
-        to {
-            top: 0;
-        }
+        margin-bottom: 50px;
     }
 
     .logo {
@@ -326,13 +281,8 @@ p {
         height: 0;
         visibility: hidden;
         opacity: 0;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr repeat(1, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+        display: block;
+        text-align: center;
     }
 
     .fa-bars {
@@ -380,30 +330,48 @@ p {
         display: none;
     }
 
-    ._1stsec {
+    ._1sttext {
         width: 92%;
         margin-left: 5%;
+        margin-right: 5%;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    b {
+        font-size: 100px;
+    }
+
+    ._1stsec {
         display: flex;
-        gap: 100px;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-image: url(layered-waves-haikei\ \(2\).svg);
+    }
+    
+    #handball-tabelle {
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #handball-spielplan {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .tore {
+        font-family: 'Poppins', sans-serif;
+        font-size: 100px;
         text-align: center;
-        margin-top: 150px;
-        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+        margin-top: 50px;
     }
-
-    .top {
-        font-size: 35px;
-    }
-
-    .bottom {
-        font-size: 20px;
-    }
-
-    button {
-        outline: none;
-    }
-
 }
 
 @media screen and (max-width: 430px) and (min-width: 428px) {
@@ -411,7 +379,134 @@ p {
         margin-left: 22.5vw;
     }
 
+    .links {
+        text-align: center;
+    }
+
     .logo {
         margin-left: 35vw;
     }
 }
+
+/* /* @media screen and (min-width: 481px) and (max-width: 768px) { 
+    tablet 
+
+    #clock {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: 33vw;
+        cursor: pointer;
+    }
+    
+    .hamburger input {
+        display: none;
+    }
+    
+    .hamburger svg {
+        The size of the SVG defines the overall size
+        height: 3em;
+        Define the transition for transforming the SVG
+        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3;
+        Define the transition for transforming the Stroke
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line-top-bottom {
+        stroke-dasharray: 12 63;
+    }
+
+    .hamburger input:checked + svg {
+        transform: rotate(-45deg);
+    }
+
+    .hamburger input:checked + svg .line-top-bottom {
+        stroke-dasharray: 20 300;
+        stroke-dashoffset: -32.42;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-left: 40vw;
+        font-size: 7vw;
+    }
+
+    .navItems {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        animation: showMenu .4s ease forwards;
+        transition: all .4s ease;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navItems li a {
+        font-size: 5vw;
+    }
+
+    .links {
+        animation: showMenu .4s ease forwards;
+        transition: all .4s ease;
+        margin-left: -25px;
+        align-items: center;
+        justify-content: center;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .links a i {
+        font-size: 5vw;
+    }
+
+    .fa-bars {
+        display: flex;
+        margin-left: 80px;
+        cursor: pointer;
+        color: #e8eae5;
+        font-size: 45px;
+        margin-top: 5px;
+    }
+
+    .close {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .fa-brands {
+        margin-left: 45px;
+        margin-right: 25px;
+    }
+
+    .top-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+} */
