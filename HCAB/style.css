@@ -355,7 +355,8 @@ b {
         margin-top: 50px;
         justify-content: center;
         align-items: center;
-        margin-left: 150px;
+        margin-left: auto;
+        margin-right: auto;
         font-family: 'Poppins', sans-serif;
     }
     
