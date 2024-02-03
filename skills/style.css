@@ -78,6 +78,10 @@ nav {
     transition: all .3s;
 }
 
+.links {
+    display: flex;
+}
+
 .links a {
     font-size: 30px;
     color: #e8eae5;
@@ -89,6 +93,7 @@ nav {
     color: #000000;
     transition: color 0.3s;
 }
+
 
 .navItems li:hover a {
     color: #000000;
@@ -350,7 +355,6 @@ a {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        animation: showMenu .4s ease forwards;
         transition: all .4s ease;
         height: 0;
         visibility: hidden;
@@ -366,13 +370,8 @@ a {
         height: 0;
         visibility: hidden;
         opacity: 0;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr repeat(1, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+        display: block;
+        text-align: center;
     }
 
     .fa-bars {
