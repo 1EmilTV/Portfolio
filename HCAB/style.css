@@ -362,6 +362,8 @@ b {
     
     #handball-spielplan {
         font-family: 'Poppins', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .tore {
