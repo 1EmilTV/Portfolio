@@ -76,6 +76,8 @@ nav {
     text-decoration: none;
     text-transform: capitalize;
     transition: all .3s;
+    width: 100%;
+    padding: 10px;
 }
 
 .links {

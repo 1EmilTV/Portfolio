@@ -70,6 +70,7 @@ nav {
     list-style: none;
     margin: 0 15px;
     overflow-y: hidden;
+    width: fit-content;
 }
 
 .navItems li a {
@@ -79,6 +80,8 @@ nav {
     text-decoration: none;
     text-transform: capitalize;
     transition: all .3s;
+    width: 100%;
+    padding: 10px;
 }
 
 .links {
@@ -121,6 +124,11 @@ nav {
 #handball-spielplan {
     margin-top: 23px;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.hb-embed__schedule-list-item-team-logo-wrapper {
+    overflow: hidden;
 }
 
 .tore {
@@ -202,7 +210,7 @@ b {
     display: none;
 }
 
-@media screen and (max-width: 480px) and (min-width: 320px) {
+@media screen and (max-width: 786px){
     nav {
         display: flex;
         flex-direction: column;
