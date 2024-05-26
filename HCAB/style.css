@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@font-face {
+    font-family: "Grundschrift";
+    src: url('fonts/grundschrift-beta.ttf') format('truetype');
+}
 
 
 * {
@@ -7,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Grundschrift', sans-serif;
 }
 
 html {
@@ -48,7 +53,6 @@ nav {
     height: 80px;
     line-height: 80px;
     background-color: #4d5c4b;
-    font-family: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -117,13 +121,11 @@ nav {
 
 #handball-tabelle {
     margin-top: 50px;
-    margin-right: 200px;
-    font-family: 'Poppins', sans-serif;
+    width: 500px;
 }
 
 #handball-spielplan {
     margin-top: 23px;
-    font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 
@@ -132,7 +134,6 @@ nav {
 }
 
 .tore {
-    font-family: 'Poppins', sans-serif;
     font-size: 100px;
     text-align: center;
     margin-right: 150px;
@@ -140,7 +141,6 @@ nav {
 
 ._2ndsec {
     height: 0;
-    font-family: 'Poppins', sans-serif;
     background-image: url(layered-waves-haikei\ \(2\).svg);
 }
 
@@ -198,7 +198,6 @@ b {
     left: 30px;
     color: #000000;
     font-size: 50px;
-    font-family: 'ADLaM Display', sans-serif;
     z-index: 999;
 }
 
@@ -368,17 +367,14 @@ b {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        font-family: 'Poppins', sans-serif;
     }
     
     #handball-spielplan {
-        font-family: 'Poppins', sans-serif;
         margin-left: auto;
         margin-right: auto;
     }
     
     .tore {
-        font-family: 'Poppins', sans-serif;
         font-size: 100px;
         text-align: center;
         justify-content: center;
