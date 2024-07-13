@@ -175,13 +175,6 @@ form {
     font-size: 200%;
 }
 
-.inputs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .contact-inputs {
     margin-top: 25px;
     width: 60rem;
@@ -191,7 +184,6 @@ form {
     border: 2px solid grey;
     border-radius: 10px;
     outline: none;
-    color: #000000;
 }
 
 textarea {
@@ -247,43 +239,26 @@ hr {
     padding: 1rem;
     font-size: 1rem;
     color: #f5f5f5;
-    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
     width: 60rem;
+    transition: all .2s linear;
 }
 
-.user-label {
-    position: absolute;
-    left: 15px;
-    color: #e8e8e8;
-    pointer-events: none;
-    transform: translateY(2.6rem);
-    transition: 150ms cubic-bezier(0.4,0,0.2,1);
-}
-
-.input:focus, input:valid {
+.input:focus {
     outline: none;
-    border: 1.5px solid #1a73e8;
+    box-shadow: 2px 2px 2px black inset;
 }
 
-.input:focus ~ label, input:valid ~ label {
-    transform: translateY(85%) scale(0.8);
-    background-color: #7d957e;
-    padding: 0 .2em;
-    color: #c0c5b8;
+textarea {
+    transition: all .2s linear;
 }
 
-input:valid ~ label.nachnameLabel {
-    transform: translateY(85%) scale(0.8) translateX(-13px);
-    background-color: #7d957e;
-    padding: 0 .2em;
-    color: #c0c5b8;
+textarea:focus {
+    outline: none;
+    box-shadow: 2px 2px 2px black inset;
 }
 
-input:focus ~ label.nachnameLabel {
-    transform: translateY(85%) scale(0.8) translateX(-13px);
-    background-color: #7d957e;
-    padding: 0 .2em;
-    color: #c0c5b8;
+.input::placeholder {
+    color: #e8e8e8;
 }
 
 .lasttwo {
@@ -485,7 +460,7 @@ input:focus ~ label.nachnameLabel {
         background: none;
         padding: 1rem;
         font-size: 1rem;
-        color: #f5f5f5;
+        color: white;
         transition: border 150ms cubic-bezier(0.4,0,0.2,1);
         width: 100%;
     }
@@ -513,36 +488,6 @@ input:focus ~ label.nachnameLabel {
         max-height: 10rem;
     }
 
-    .user-label {
-        z-index: 9999999999999999999;
-        position: absolute;
-        left: 15px;
-        color: #e8e8e8;
-        pointer-events: none;
-        transition: 150ms cubic-bezier(0.4,0,0.2,1);
-    }
-
-    .input:focus ~ label, input:valid ~ label {
-        transform: translateY(12.5px) scale(0.8);
-        background-color: #7d957e;
-        padding: 0 .2em;
-        color: #c0c5b8;
-    }
-    
-    input:valid ~ label.nachnameLabel {
-        transform: translateY(12.5px) scale(0.8) translateX(-13px);
-        background-color: #7d957e;
-        padding: 0 .2em;
-        color: #c0c5b8;
-    }
-    
-    input:focus ~ label.nachnameLabel {
-        transform: translateY(12.5px) scale(0.8) translateX(-13px);
-        background-color: #7d957e;
-        padding: 0 .2em;
-        color: #c0c5b8;
-    }
-
     .submitButton {
         margin-top: 25px;
         border: none;
@@ -554,38 +499,6 @@ input:focus ~ label.nachnameLabel {
         font-size: 175%;
         cursor: pointer;
         transition: all .2s linear;
-    }
-}
-
-@media screen and (max-width: 430px) and (min-width: 428px) {
-    .user-label {
-        position: absolute;
-        left: 15px;
-        color: #e8e8e8;
-        pointer-events: none;
-        transform: translateY(40.5px);
-        transition: 150ms cubic-bezier(0.4,0,0.2,1);
-    }
-
-    .input:focus ~ label, input:valid ~ label {
-        transform: translateY(12.5px) scale(0.8);
-        background-color: #7d957e;
-        padding: 0 .2em;
-        color: #c0c5b8;
-    }
-    
-    input:valid ~ label.nachnameLabel {
-        transform: translateY(12.5px) scale(0.8) translateX(-13px);
-        background-color: #7d957e;
-        padding: 0 .2em;
-        color: #c0c5b8;
-    }
-    
-    input:focus ~ label.nachnameLabel {
-        transform: translateY(12.5px) scale(0.8) translateX(-13px);
-        background-color: #7d957e;
-        padding: 0 .2em;
-        color: #c0c5b8;
     }
 }
 

@@ -11,6 +11,9 @@
         <script src="feedback.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link href="validetta/validetta.css" rel="stylesheet" type="text/css" media="screen" >
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="validetta/validetta.js"></script>
     </head>
 <body>
     <div class="_1stnav">
@@ -85,32 +88,28 @@
     </div>
     <div class="contactform">
         <div class="contact-container">
-            <form name="Kontakt" method="POST" netlify-honeypot="bot-field" data-netlify="true" netlify action="/feedback/success.html">
+            <form name="Kontakt" id="form" method="POST" netlify-honeypot="bot-field" data-netlify="true" netlify action="/feedback/success.html">
                 <p class="hidden">
                     <label>
                         Don’t fill this out if you’re human: <input name="bot-field"/>
                     </label>
                 </p>
                 <h2 class="title">Kontaktiere Mich!</h2>
-                        <hr>
+                    <hr>
                 <div class="input-group">
-                    <input required type="text" name="Vorname" autocomplete="off" class="input">
-                    <label class="user-label">Vorname</label>
+                    <input class="input" name="name" placeholder="Name" type="text" data-validetta="required">
                 </div>
                 <div class="input-group">
-                    <input  required type="text" name="Nachname" autocomplete="off" class="input">
-                    <label class="user-label nachnameLabel">Nachname (optional)</label>
+                    <input class="input" name="lastName" placeholder="Nachname (optional)" type="text">
                 </div>
                 <div class="input-group">
-                    <input required type="email" name="email" autocomplete="off" class="input" id="emaill">
-                    <label class="user-label">E-Mail</label>
+                    <input class="input" name="email" placeholder="E-Mail" type="text" data-validetta="required,email">
                 </div>
                 <div class="input-group">
-                    <input required type="text" name="Betreff" autocomplete="off" class="input">
-                    <label class="user-label">Betreff</label>
+                    <input class="input" name="betreff" placeholder="Betreff" type="text" data-validetta="required,minLength[5]">
                 </div>
                 <div class="lasttwo">
-                    <textarea name="Nachricht" placeholder="Deine Nachricht" autocomplete="off" required class="contact-inputs textfeld"></textarea>
+                    <textarea name="Nachricht" placeholder="Deine Nachricht" autocomplete="off"  class="contact-inputs textfeld" type="text" data-validetta="required,minLength[20],maxLength[500]"></textarea>
                     <button type="submit" class="submitButton" onclick="continueornot()">Senden</button>
                 </div>
             </form>

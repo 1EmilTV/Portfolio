@@ -5,6 +5,9 @@
     src: url('fonts/grundschrift-beta.ttf') format('truetype');
 }
 
+.navItems li .current {
+    color: black;
+}
 
 * {
     margin: 0;
@@ -210,6 +213,7 @@ nav {
 .redirect1 {
     font-size: 200%;
     margin-top: 50px;
+    margin-bottom: 15px;
     padding: 10px;
     border: 2px groove #758a76;
     background-color: #7d957e;
