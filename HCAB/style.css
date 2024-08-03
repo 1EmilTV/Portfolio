@@ -23,6 +23,7 @@ html {
 
 body {
     background-color: #c0c5b8;
+    font-family: 'Grundschrift', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -212,12 +213,13 @@ b {
     display: none;
 }
 
-@media screen and (max-width: 786px){
+@media screen and (max-width: 786px) {
     nav {
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
+        transition: all .5s linear;
     }
 
     .hamburger {
@@ -225,18 +227,18 @@ b {
         margin-left: 15vw;
         cursor: pointer;
     }
-    
+
     .hamburger input {
         display: none;
     }
-    
+
     .hamburger svg {
         /* The size of the SVG defines the overall size */
         height: 3em;
         /* Define the transition for transforming the SVG */
         transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     .line {
         fill: none;
         stroke: white;
@@ -245,7 +247,7 @@ b {
         stroke-width: 3;
         /* Define the transition for transforming the Stroke */
         transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .line-top-bottom {
@@ -363,7 +365,7 @@ b {
         height: 100%;
         background-image: url(layered-waves-haikei\ \(2\).svg);
     }
-    
+
     #handball-tabelle {
         margin-top: 50px;
         justify-content: center;
@@ -371,12 +373,12 @@ b {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     #handball-spielplan {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .tore {
         font-size: 100px;
         text-align: center;
@@ -420,18 +422,18 @@ b {
         margin-left: 33vw;
         cursor: pointer;
     }
-    
+
     .hamburger input {
         display: none;
     }
-    
+
     .hamburger svg {
         The size of the SVG defines the overall size
         height: 3em;
         Define the transition for transforming the SVG
         transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     .line {
         fill: none;
         stroke: white;
