@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 @font-face {
     font-family: "Grundschrift";
-    src: url('fonts/grundschrift-beta.ttf') format('truetype');
+    src: url('/fonts/grundschrift-beta.ttf') format('truetype');
 }
 
 .navItems li .current {
