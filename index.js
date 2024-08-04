@@ -68,12 +68,12 @@ btn.addEventListener('click', function(){
     }
     else{
         menuTop.style.visibility = 'hidden';
-        logo.style.visibility = 'visible';
         menuTop.style.opacity = '0';
         menuTop.style.height = '0';
         menuBottom.style.visibility = 'hidden';
         menuBottom.style.opacity = '0';
         menuBottom.style.height = '0';
+        setInterval(1000,logo.style.visibility = 'visible')
     }
 });
 
