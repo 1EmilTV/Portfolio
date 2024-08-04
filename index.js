@@ -25,14 +25,16 @@ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 }
 }
 
-window.onscroll = function() {scrollFunctionimg()};
+if (screen.width > 768){
+    window.onscroll = function() {scrollFunctionimg()};
 
-function scrollFunctionimg() {
-if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
-    logo.style.marginTop = "0";
-} else {
-    logo.style.marginTop = "100px";
-}
+    function scrollFunctionimg() {
+        if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+            logo.style.marginTop = "0";
+        } else {
+            logo.style.marginTop = "100px";
+        }
+    }
 }
 
 // When the user clicks on the button, scroll to the top of the document

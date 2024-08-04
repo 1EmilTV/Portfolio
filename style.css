@@ -207,6 +207,13 @@ b {
         transition: all .5s linear
     }
 
+    .logopic {
+        transform: scale(50%);
+        position: absolute;
+        top: -50px;
+        right: -50px;
+    }
+
     .hamburger {
         display: flex;
         margin-left: 15vw;
