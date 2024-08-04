@@ -1,6 +1,7 @@
 {
     "short_name": "Portfolio",
     "name": "Mein Portfolio",
+    "id":"/",
     "icons": [
         {
             "src": "/logo/logo.png",
@@ -13,5 +14,4 @@
     "display":"standalone",
     "scope":"/",
     "description":"Mein Portfolio"
-    
 }
