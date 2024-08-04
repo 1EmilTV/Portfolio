@@ -66,7 +66,7 @@ nav {
     letter-spacing: 3px;
     cursor: pointer;
     text-transform: uppercase;
-}
+} 
 
 .navItems {
     display: flex;
@@ -116,6 +116,16 @@ nav {
     justify-content: center;
     align-items: center;
     height: 91.2vh;
+    gap: 555px;
+    margin-left: 0%;
+}
+
+.logopic {
+    margin-top: 100px;
+    position: fixed;
+    top: 0;
+    right: -0%;
+    transition: all .1s linear;
 }
 
 ._2ndsec {

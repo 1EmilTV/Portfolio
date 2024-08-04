@@ -1,5 +1,6 @@
 // Get the button:
 let mybutton = document.getElementById("myBtn");
+let logo = document.getElementById("logo");
 let clock = document.getElementById("clock");
 let hrs = document.getElementById("hrs");
 let mins = document.getElementById("mins");
@@ -21,6 +22,16 @@ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
 } else {
     mybutton.style.display = "none";
+}
+}
+
+window.onscroll = function() {scrollFunctionimg()};
+
+function scrollFunctionimg() {
+if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+    logo.style.marginTop = "0";
+} else {
+    logo.style.marginTop = "100px";
 }
 }
 
