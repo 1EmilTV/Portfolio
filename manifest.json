@@ -1,7 +1,7 @@
 {
     "short_name": "Portfolio",
     "name": "Mein Portfolio",
-    "id":"/",
+    "id":"/load/load.html",
     "icons": [
         {
             "src": "/logo/logo.png",
@@ -9,7 +9,7 @@
             "sizes": "750x750"
         }
     ],
-    "start_url": "https://www.1emil.dev",
+    "start_url": "https://www.1emil.dev/load/index.html",
     "background_color":"#1d1e1e",
     "display":"standalone",
     "scope":"/",

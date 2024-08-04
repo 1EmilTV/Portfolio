@@ -49,7 +49,6 @@ const btn = document.getElementById("close-btn");
 
 if(window.screen.width <= 768) {
     menuTop.style.visibility = 'hidden';
-    logo.style.visibility = 'visible';
     menuTop.style.opacity = '0';
     menuTop.style.height = '0';
     menuBottom.style.visibility = 'hidden';
@@ -69,6 +68,7 @@ btn.addEventListener('click', function(){
     }
     else{
         menuTop.style.visibility = 'hidden';
+        logo.style.visibility = 'visible';
         menuTop.style.opacity = '0';
         menuTop.style.height = '0';
         menuBottom.style.visibility = 'hidden';

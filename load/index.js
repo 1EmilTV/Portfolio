@@ -1,0 +1,1 @@
+setInterval(5000,window.location.replace("https://www.1emil.dev"))
