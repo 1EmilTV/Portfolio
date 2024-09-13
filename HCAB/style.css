@@ -137,6 +137,10 @@ nav {
     overflow: hidden;
 }
 
+.hb-embed__schedule-list-item-starts-at-time {
+    width: 100%;
+}
+
 .tore {
     font-size: 100px;
     text-align: center;
