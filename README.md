@@ -1,1 +1,1 @@
-This is the old version of my Portfolio. Currently working on a updated version
+This is the old version of my Portfolio. Currently working on an updated version.
