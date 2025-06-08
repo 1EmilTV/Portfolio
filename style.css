@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+	--bg-grey: #eeeeee;
+	--bg-grey-dark: #333333;
+	--bg-white: #ffffff;
+	--text-dark: #000000;
+	--text-bright: #ffffff;
+	--text-grey: #2f2f2f;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Playfair Display", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+section {
+	height: 100vh;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	margin-left: 25%;
+	height: 5vh;
+	padding: 0.5vh 1.5vw;
+	position: fixed;
+	top: 2vh;
+	background-color: var(--bg-white);
+	border-radius: 25px;
+	box-shadow: 0px 0px 5px #cfcfcf;
+	z-index: 1000;
+}
+
+nav p {
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+nav p a {
+	text-decoration: none;
+	color: var(--text-dark);
+	font-size: 1rem;
+	font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75vw;
+	list-style-type: none;
+	font-size: 0.75rem;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: var(--text-grey);
+	cursor: pointer;
+	position: relative;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	display: block;
+	left: 0;
+	background: #2f2f2f;
+	transition: width 0.3s ease-in-out;
+}
+
+nav a.last:hover::after {
+	width: 0%;
+}
+
+nav a:hover::after {
+	width: 100%;
+}
+
+nav ul li .last {
+	border: 1px solid #000000;
+	background-color: #000000;
+	padding: 0.5vh 1vw;
+	margin-right: -1vw;
+	color: var(--text-bright);
+	border-radius: 25px;
+	transition: all 0.3s ease-in-out;
+}
+
+nav ul li .last:hover {
+	background-color: var(--bg-grey-dark);
+	border-color: var(--bg-grey-dark);
+	transition: all 0.3s ease-in-out;
+}
+
+.landing {
+	background-color: var(--bg-grey);
+}
