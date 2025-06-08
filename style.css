@@ -120,9 +120,7 @@ nav ul li .last:hover {
 
 .landing h1,
 .landing h2 {
-	margin-left: 10%;
 	font-weight: 600;
-	width: 50%;
 }
 
 .landing h1 {
@@ -147,6 +145,26 @@ nav ul li .last:hover {
 .landing h2 > span > span {
 	display: block;
 	animation: animateWords 7.5s infinite ease;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 100%;
+	margin-left: 10%;
+}
+
+.left {
+	width: 50%;
+}
+
+.right {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 @keyframes animateWords {
