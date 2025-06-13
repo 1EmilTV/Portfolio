@@ -1,102 +1,130 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portfolio - Emil</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="src/favicon.png" type="image/x-icon" />
-		<script src="index.js" defer></script>
-		<script
-			src="https://kit.fontawesome.com/facb2e698a.js"
-			crossorigin="anonymous"
-		></script>
-	</head>
-	<body>
-		<nav>
-			<p><a href="#home">emil</a></p>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">Über mich</a></li>
-				<li><a href="#projects">Projekte</a></li>
-				<li><a href="#special">Besonderes</a></li>
-				<li><a href="#contact" class="last">Kontakiere mich</a></li>
-			</ul>
-		</nav>
-		<section class="landing" id="home">
-			<div class="top">
-				<div class="left">
-					<h1>
-						Hallo, ich bin <bdi class="landingheading">Emil</bdi>
-					</h1>
-					<h2>
-						Ich bin
-						<span>
-							<span>Developer</span>
-							<span>Schüler</span>
-							<span>Designer</span>
-							<span>Freelancer</span>
-							<span>Developer</span>
-						</span>
-					</h2>
-					<!--<button>Du brauchst eine Website?</button>-->
-				</div>
-				<div class="right">
-					<img src="src/lego_figure.png" width="300px" />
-				</div>
-			</div>
-			<div class="scroller">
-				<ul
-					class="tag-list scroller_inner"
-					style="--_animation-duration: 80s"
-				>
-					<li><i class="fa-brands fa-html5"></i></li>
-					<li><i class="fa-brands fa-css3-alt"></i></li>
-					<li><i class="fa-brands fa-js"></i></li>
-					<li><i class="fa-brands fa-node"></i></li>
-					<li><i class="fa-brands fa-php"></i></li>
-					<li><i class="fa-solid fa-database"></i></li>
-					<li><i class="fa-brands fa-python"></i></li>
-					<li><i class="fa-brands fa-git-alt"></i></li>
-					<li><i class="fa-brands fa-github"></i></li>
-					<li><i class="fa-brands fa-html5"></i></li>
-					<li><i class="fa-brands fa-css3-alt"></i></li>
-					<li><i class="fa-brands fa-js"></i></li>
-					<li><i class="fa-brands fa-node"></i></li>
-					<li><i class="fa-brands fa-php"></i></li>
-					<li><i class="fa-solid fa-database"></i></li>
-					<li><i class="fa-brands fa-python"></i></li>
-					<li><i class="fa-brands fa-git-alt"></i></li>
-					<li><i class="fa-brands fa-github"></i></li>
-					<li><i class="fa-brands fa-html5"></i></li>
-					<li><i class="fa-brands fa-css3-alt"></i></li>
-					<li><i class="fa-brands fa-js"></i></li>
-					<li><i class="fa-brands fa-node"></i></li>
-					<li><i class="fa-brands fa-php"></i></li>
-					<li><i class="fa-solid fa-database"></i></li>
-					<li><i class="fa-brands fa-python"></i></li>
-					<li><i class="fa-brands fa-git-alt"></i></li>
-					<li><i class="fa-brands fa-github"></i></li>
-					<li><i class="fa-brands fa-html5"></i></li>
-					<li><i class="fa-brands fa-css3-alt"></i></li>
-					<li><i class="fa-brands fa-js"></i></li>
-					<li><i class="fa-brands fa-node"></i></li>
-					<li><i class="fa-brands fa-php"></i></li>
-					<li><i class="fa-solid fa-database"></i></li>
-					<li><i class="fa-brands fa-python"></i></li>
-					<li><i class="fa-brands fa-git-alt"></i></li>
-					<li><i class="fa-brands fa-github"></i></li>
-				</ul>
-			</div>
-		</section>
-		<section class="about" id="about"></section>
-		<section class="projects" id="projects"></section>
-		<section class="special" id="special"></section>
-		<section class="contact" id="contact"></section>
-	</body>
-	<!-- 100% privacy-first analytics -->
-	<script
-		async
-		src="https://scripts.simpleanalyticscdn.com/latest.js"
-	></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Emil</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="src/favicon.png" type="image/x-icon" />
+        <script src="index.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/facb2e698a.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <p><a href="#home">emil</a></p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#special">Besonderes</a></li>
+                <li><a href="#contact" class="last">Kontakiere mich</a></li>
+            </ul>
+        </nav>
+        <section class="landing" id="home">
+            <div class="top">
+                <div class="left">
+                    <h1>
+                        Hallo, ich bin <bdi class="landingheading">Emil</bdi>
+                    </h1>
+                    <h2>
+                        Ich bin
+                        <span>
+                            <span>Developer</span>
+                            <span>Schüler</span>
+                            <span>Designer</span>
+                            <span>Freelancer</span>
+                            <span>Developer</span>
+                        </span>
+                    </h2>
+                    <button onclick="location.href='#contact'" class="adbtn">
+                        Du brauchst eine Website?
+                    </button>
+                </div>
+                <div class="right">
+                    <img src="src/lego_figure.png" width="300px" />
+                </div>
+            </div>
+            <div class="scroller">
+                <ul
+                    class="tag-list scroller_inner"
+                    style="--_animation-duration: 80s"
+                >
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-node"></i></li>
+                    <li><i class="fa-brands fa-php"></i></li>
+                    <li><i class="fa-solid fa-database"></i></li>
+                    <li><i class="fa-brands fa-python"></i></li>
+                    <li><i class="fa-brands fa-git-alt"></i></li>
+                    <li><i class="fa-brands fa-github"></i></li>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-node"></i></li>
+                    <li><i class="fa-brands fa-php"></i></li>
+                    <li><i class="fa-solid fa-database"></i></li>
+                    <li><i class="fa-brands fa-python"></i></li>
+                    <li><i class="fa-brands fa-git-alt"></i></li>
+                    <li><i class="fa-brands fa-github"></i></li>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-node"></i></li>
+                    <li><i class="fa-brands fa-php"></i></li>
+                    <li><i class="fa-solid fa-database"></i></li>
+                    <li><i class="fa-brands fa-python"></i></li>
+                    <li><i class="fa-brands fa-git-alt"></i></li>
+                    <li><i class="fa-brands fa-github"></i></li>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-node"></i></li>
+                    <li><i class="fa-brands fa-php"></i></li>
+                    <li><i class="fa-solid fa-database"></i></li>
+                    <li><i class="fa-brands fa-python"></i></li>
+                    <li><i class="fa-brands fa-git-alt"></i></li>
+                    <li><i class="fa-brands fa-github"></i></li>
+                </ul>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="left">
+                <p>
+                    Mein Name ist Emil, ich bin 16 Jahre alt und gehe momentan
+                    in die 10. Klasse eines Gymnasiums. <br />
+                    Als LK habe ich Mathe und Physik gewählt, da dies mit
+                    Informatik, Chemie und Sport meine Lieblingsfächer sind.
+                    <br />
+                    Vor 3 Jahren habe ich angefangen zu coden, zunächst C++,
+                    bevor ich Web-Development Tutorials angeschaut habe und
+                    gemerkt habe, dass das viel Spaß macht. Von da an habe ich
+                    HTML, CSS, Javascript, php und SQL gelernt. Momentan lerne
+                    ich noch Python, um zu Full-Stack-Development zu wechseln.
+                    <br />
+                    In meiner Freizeit verbringe ich gern Zeit mit Freunden,
+                    gehe ins Gym bzw. Handball oder Code ein paar Projekte.
+                </p>
+                <div class="icons">
+                    <i class="fa-brands fa-node"></i
+                    ><i class="fa-brands fa-php"></i
+                    ><i class="fa-brands fa-python"></i>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Über mich</h1>
+            </div>
+        </section>
+        <section class="projects" id="projects"></section>
+        <section class="special" id="special"></section>
+        <section class="contact" id="contact"></section>
+    </body>
+    <!-- 100% privacy-first analytics -->
+    <script
+        async
+        src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
 </html>
