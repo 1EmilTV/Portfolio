@@ -39,9 +39,9 @@
                             <span>Developer</span>
                         </span>
                     </h2>
-                    <button onclick="location.href='#contact'" class="adbtn">
+                    <!--<button onclick="location.href='#contact'" class="adbtn">
                         Du brauchst eine Website?
-                    </button>
+                    </button>-->
                 </div>
                 <div class="right">
                     <img src="src/lego_figure.png" width="300px" />
@@ -110,8 +110,10 @@
                     Momentan arbeite ich auch an meiner Komplexen Leistung in
                     Klasse 11, mit dem Thema Empfehlungssysteme. Möglicherweise
                     kann ich hier Teile davon veröffentlichen.
-                    <br>
-                    Nebenbei mache ich Websites für Kunden, falls du eine personalisierte Website benötigst, klicke <a href="#contact">hier</a>.
+                    <!--<br />
+                    Nebenbei mache ich Websites für Kunden, falls du eine
+                    personalisierte Website benötigst, klicke
+                    <a href="#contact">hier</a>.-->
                 </p>
                 <div class="icons">
                     <i class="fa-brands fa-node"></i
@@ -124,29 +126,33 @@
             </div>
         </section>
         <section class="projects" id="projects">
-            <div class="bigproj proj">
-                <div class="big projcard div1"></div>
-                <div class="big projcard div2"></div>
-                <div class="big projcard div3"></div>
-                <div class="big projcard div4"></div>
-                <div class="big projcard div5"></div>
-                <div class="big projcard div6"></div>
+            <div class="filter-buttons">
+                <button onclick="filterCards('all')" id="all">
+                    Alle
+                </button>
+                <button onclick="filterCards('big')" id="big">
+                    Große Projekte
+                </button>
+                <button onclick="filterCards('small')" id="small">
+                    Kleinere Projekte
+                </button>
+                <button onclick="filterCards('school')">Schulprojekte</button>
             </div>
-            <div class="smallproj proj">
-                <div class="small projcard div1"></div>
-                <div class="small projcard div2"></div>
-                <div class="small projcard div3"></div>
-                <div class="small projcard div4"></div>
-                <div class="small projcard div5"></div>
-                <div class="small projcard div6"></div>
-            </div>
-            <div class="schoolproj proj">
-                <div class="school projcard div1"></div>
-                <div class="school projcard div2"></div>
-                <div class="school projcard div3"></div>
-                <div class="school projcard div4"></div>
-                <div class="school projcard div5"></div>
-                <div class="school projcard div6"></div>
+
+            <div class="cards-container">
+                <div class="card" data-category="school">Physikprojekt</div>
+                <div class="card" data-category="big">
+                    <h2>Home-App</h2>
+                    <p>
+                        Eine Webapp für meine Familie, mit der man den anderen
+                        Aufgaben geben kann.
+                    </p>
+                    <button
+                        onclick="location.href='https://homeapp.great-site.net/'"
+                    >
+                        Zur Website
+                    </button>
+                </div>
             </div>
         </section>
         <section class="special" id="special"></section>

@@ -18,3 +18,42 @@ function addAnimation() {
         });
     });
 }
+
+function filterCards(category) {
+    const cards = document.querySelectorAll(".card");
+
+    const buttons = document.querySelectorAll(".filter-buttons button");
+
+    cards.forEach((card) => {
+        const cardCategory = card.getAttribute("data-category");
+
+        const shouldShow = category === "all" || cardCategory === category;
+
+        if (shouldShow) {
+            // Zeige Karte an
+            card.classList.remove("hide-anim");
+            card.style.display = "flex";
+
+            // Trigger Animation (reflow)
+            void card.offsetWidth;
+
+            card.classList.add("show");
+        } else {
+            // Animiert ausblenden
+            card.classList.remove("show");
+            card.classList.add("hide-anim");
+
+            // Nach der Animation -> display: none setzen
+            setTimeout(() => {
+                card.style.display = "none";
+            }, 500); // Muss zur transition-Dauer in CSS passen
+        }
+    });
+
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    document
+        .querySelector(`.filter-buttons button[onclick*="${category}"]`)
+        ?.classList.add("active");
+}
+
+filterCards("all");
