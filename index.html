@@ -128,7 +128,7 @@
         <section class="projects" id="projects">
             <div class="filter-buttons">
                 <button onclick="filterCards('all')" id="all">
-                    Alle
+                    Alle Projekte
                 </button>
                 <button onclick="filterCards('big')" id="big">
                     Große Projekte
@@ -140,18 +140,34 @@
             </div>
 
             <div class="cards-container">
-                <div class="card" data-category="school">Physikprojekt</div>
-                <div class="card" data-category="big">
-                    <h2>Home-App</h2>
-                    <p>
-                        Eine Webapp für meine Familie, mit der man den anderen
-                        Aufgaben geben kann.
-                    </p>
-                    <button
-                        onclick="location.href='https://homeapp.great-site.net/'"
-                    >
-                        Zur Website
-                    </button>
+                <div class="topcards horcards">
+                    <div class="card" data-category="school">
+                        <h2>American-Album</h2>
+                        <p>
+                            Ein Schulprojekt, bei dem wir ein "American-Album"
+                            erstellen mussten, bei dem wir 5 unterschiedliche
+                            Aspekte der amerikanischen Kultur behandeln sollten.
+                        </p>
+                        <button
+                            onclick="if(screen.width >= 769) {window.open('https://american-album.netlify.app','_blank');} else {location.href='https://american-album.netlify.app'}"
+                        >
+                            Zur Website
+                        </button>
+                    </div>
+                </div>
+                <div class="bottomcards horcards">
+                    <div class="card" data-category="big">
+                        <h2>Home-App</h2>
+                        <p>
+                            Eine Webapp für meine Familie, mit der man den
+                            anderen Aufgaben geben kann.
+                        </p>
+                        <button
+                            onclick="if(screen.width >= 769) {window.open('https://homeapp.great-site.net','_blank');} else {location.href='https://homeapp.great-site.net'}"
+                        >
+                            Zur Website
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -19,6 +19,12 @@ function addAnimation() {
     });
 }
 
+// TODO: IntersectionObserver für alle Elemente, die in den Viewport kommen
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(() => {});
+});
+
 function filterCards(category) {
     const cards = document.querySelectorAll(".card");
 
