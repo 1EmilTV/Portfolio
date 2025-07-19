@@ -21,3 +21,6 @@ function updateTimer() {
 
     timer.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
 }
+
+setInterval(updateTimer, 1000);
+updateTimer(); // Initial call to set the timer immediately
