@@ -93,7 +93,7 @@
         </section>
         <section class="about" id="about">
             <div class="left">
-                <p>
+                <p class="hidden hiddenleft" style="transition-delay: 200ms">
                     Mein Name ist Emil, ich bin 16 Jahre alt und gehe momentan
                     in die 11. Klasse eines Gymnasiums. <br />
                     Als LK habe ich Mathe und Physik gewählt, da dies mit
@@ -107,6 +107,7 @@
                     <br />
                     In meiner Freizeit verbringe ich gern Zeit mit Freunden,
                     gehe ins Gym, spiele Handball oder Code ein paar Projekte.
+                    <br />
                     Momentan arbeite ich auch an meiner Komplexen Leistung in
                     Klasse 11, mit dem Thema Empfehlungssysteme. Möglicherweise
                     kann ich hier Teile davon veröffentlichen.
@@ -116,40 +117,89 @@
                     <a href="#contact">hier</a>.-->
                 </p>
                 <div class="icons">
-                    <i class="fa-brands fa-node"></i
-                    ><i class="fa-brands fa-php"></i
-                    ><i class="fa-brands fa-python"></i>
+                    <i
+                        class="fa-brands fa-node hidden hiddenright"
+                        style="transition-delay: 400ms"
+                    ></i
+                    ><i
+                        class="fa-brands fa-php hidden hiddenright"
+                        style="transition-delay: 600ms"
+                    ></i
+                    ><i
+                        class="fa-brands fa-python hidden hiddenright"
+                        style="transition-delay: 800ms"
+                    ></i>
                 </div>
             </div>
             <div class="right">
-                <h1>Über mich</h1>
+                <h1 class="hidden hiddenright">Über mich</h1>
             </div>
         </section>
         <section class="projects" id="projects">
             <div class="filter-buttons">
-                <button onclick="filterCards('all')" id="all">
+                <button
+                    onclick="filterCards('all')"
+                    id="all"
+                    class="hidden hiddentop active"
+                >
                     Alle Projekte
                 </button>
-                <button onclick="filterCards('big')" id="big">
+                <button
+                    onclick="filterCards('big')"
+                    id="big"
+                    class="hidden hiddentop"
+                    style="transition-delay: 200ms !important"
+                >
                     Große Projekte
                 </button>
-                <button onclick="filterCards('small')" id="small">
+                <button
+                    onclick="filterCards('small')"
+                    id="small"
+                    class="hidden hiddentop"
+                    style="transition-delay: 400ms !important"
+                >
                     Kleinere Projekte
                 </button>
-                <button onclick="filterCards('school')">Schulprojekte</button>
+                <button
+                    onclick="filterCards('school')"
+                    class="hidden hiddentop"
+                    style="transition-delay: 600ms !important"
+                >
+                    Schulprojekte
+                </button>
             </div>
 
             <div class="cards-container">
                 <div class="topcards horcards">
                     <div class="card" data-category="school">
-                        <h2>American-Album</h2>
-                        <p>
+                        <h2 class="hidden hiddenleft">American-Album</h2>
+                        <p
+                            class="hidden hiddenleft"
+                            style="transition-delay: 200ms"
+                        >
                             Ein Schulprojekt, bei dem wir ein "American-Album"
                             erstellen mussten, bei dem wir 5 unterschiedliche
                             Aspekte der amerikanischen Kultur behandeln sollten.
                         </p>
                         <button
+                            class="hidden hiddenleft"
                             onclick="if(screen.width >= 769) {window.open('https://american-album.netlify.app','_blank');} else {location.href='https://american-album.netlify.app'}"
+                        >
+                            Zur Website
+                        </button>
+                    </div>
+                    <div class="card" data-category="big">
+                        <h2 class="hidden hiddenleft">Spiel Website</h2>
+                        <p
+                            class="hidden hiddenleft"
+                            style="transition-delay: 200ms"
+                        >
+                            Die Website habe ich fast am Anfang gemacht, um ein
+                            paar Tutorials zu realisieren.
+                        </p>
+                        <button
+                            class="hidden hiddenleft"
+                            onclick="if(screen.width >= 769) {window.open('https://spiel-website.netlify.app/','_blank');} else {location.href='https://spiel-website.netlify.app/'}"
                         >
                             Zur Website
                         </button>
@@ -157,13 +207,33 @@
                 </div>
                 <div class="bottomcards horcards">
                     <div class="card" data-category="big">
-                        <h2>Home-App</h2>
-                        <p>
+                        <h2 class="hidden hiddenleft">Home-App</h2>
+                        <p
+                            class="hidden hiddenleft"
+                            style="transition-delay: 200ms"
+                        >
                             Eine Webapp für meine Familie, mit der man den
                             anderen Aufgaben geben kann.
                         </p>
                         <button
+                            class="hidden hiddenleft"
                             onclick="if(screen.width >= 769) {window.open('https://homeapp.great-site.net','_blank');} else {location.href='https://homeapp.great-site.net'}"
+                        >
+                            Zur Website
+                        </button>
+                    </div>
+                    <div class="card" data-category="small">
+                        <h2 class="hidden hiddenleft">Idle Breakout</h2>
+                        <p
+                            class="hidden hiddenleft"
+                            style="transition-delay: 200ms"
+                        >
+                            Hier habe ich probiert eine einfache Version von
+                            Idle Breakout zu machen. Sehr einfach.
+                        </p>
+                        <button
+                            class="hidden hiddenleft"
+                            onclick="if(screen.width >= 769) {window.open('https://eigenespiele.netlify.app/','_blank');} else {location.href='https://eigenespiele.netlify.app/'}"
                         >
                             Zur Website
                         </button>

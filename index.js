@@ -19,11 +19,29 @@ function addAnimation() {
     });
 }
 
-// TODO: IntersectionObserver für alle Elemente, die in den Viewport kommen
+document.querySelectorAll(".filter-buttons button").forEach((button) => {
+    button.addEventListener("click", function () {
+        // Remove .active from all buttons
+        document
+            .querySelectorAll(".filter-buttons button")
+            .forEach((btn) => btn.classList.remove("active"));
+        // Add .active to the clicked button
+        this.classList.add("active");
+    });
+});
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(() => {});
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.id = "show";
+        } else {
+            entry.target.id = " ";
+        }
+    });
 });
+
+const hiddenelements = document.querySelectorAll(".hidden");
+hiddenelements.forEach((el) => observer.observe(el));
 
 function filterCards(category) {
     const cards = document.querySelectorAll(".card");
@@ -56,10 +74,10 @@ function filterCards(category) {
         }
     });
 
-    buttons.forEach((btn) => btn.classList.remove("active"));
-    document
-        .querySelector(`.filter-buttons button[onclick*="${category}"]`)
-        ?.classList.add("active");
+    // buttons.forEach((btn) => btn.classList.remove("active"));
+    // document
+    //     .querySelector(`.filter-buttons button[onclick*="${category}"]`)
+    //     ?.classList.add("active");
 }
 
 filterCards("all");

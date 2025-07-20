@@ -16,21 +16,55 @@
     --text-orange-dark: #ea7e25;
 
     /* Scroll Animations */
-    --animation-play-on-scroll: scroll();
-    --fade-in-left: fadeInLeft 0.5s ease;
-    --fade-in-top: fadeInTop 0.5s ease;
-    --fade-in-right: fadeInRight 0.5s ease;
-    --fade-in-bottom: fadeInBottom 0.5s ease;
+    /* --animation-play-on-scroll: scroll(); */
+    /* --fade-in-left-show: opacity 1, transform(translateX(0));
+    --fade-in-left-hide: opacity 0, transform(translateX(-20px));
+    --fade-in-top-show: opacity 1, transform(translateY(0));
+    --fade-in-top-hide: opacity 0, transform(translateY(-20px));
+    --fade-in-right-show: opacity 1, transform(translateX(0));
+    --fade-in-right-hide: opacity 0, transform(translateX(20px));
+    --fade-in-bottom-show: opacity 1, transform(translateY(0));
+    --fade-in-bottom-hide: opacity 0, transform(translateY(20px)); */
 
     /* Animation Delay */
-    --delay-2nd: 200ms;
+    /* --delay-2nd: 200ms;
     --delay-3rd: 400ms;
     --delay-4th: 600ms;
     --delay-5th: 800ms;
-    --delay-6th: 1000ms;
+    --delay-6th: 1000ms; */
 }
 
-@keyframes fadeInLeft {
+.hiddenleft {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hiddenright {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hiddentop {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hiddenbottom {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+#show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* @keyframes fadeInLeft {
     from {
         opacity: 0;
         transform: translateX(-20px);
@@ -72,7 +106,7 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 * {
     margin: 0;
@@ -397,8 +431,6 @@ nav ul li .last:hover {
     font-weight: 600;
     text-shadow: 0px 0px 25px #dadada;
     font-style: italic;
-    animation-timeline: var(--animation-play-on-scroll);
-    animation: var(--fade-in-right);
 }
 
 .projects {
@@ -424,8 +456,8 @@ nav ul li .last:hover {
 }
 
 .filter-buttons button:not(.active) {
-    opacity: 0.5;
-    transition: opacity 0.5s ease;
+    opacity: 0.5 !important;
+    transition: opacity 0.5s ease, transform 1s ease !important;
 }
 
 .cards-container {
@@ -451,6 +483,7 @@ nav ul li .last:hover {
     border: 2.75px solid var(--text-orange-light);
     box-shadow: 2px 2px 5px var(--text-orange-light);
     gap: 1rem;
+    margin-right: 2rem;
 }
 
 .card h2 {
@@ -468,7 +501,7 @@ nav ul li .last:hover {
     margin-left: 1rem;
 }
 
-.card button {
+.card button#show {
     align-self: flex-end;
     margin-right: 1rem;
     padding: 0.2rem 0.2rem;
@@ -477,13 +510,15 @@ nav ul li .last:hover {
     outline: none;
     width: 25%;
     border: 2px solid var(--text-orange-light);
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 1s ease,
+        transform 1s ease;
 }
 
-.card button:hover {
+.card button#show:hover {
     background-color: var(--text-orange-light);
     color: var(--text-bright);
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 1s ease,
+        transform 1s ease;
 }
 
 /* Sichtbare Karten reinfahren */
@@ -505,6 +540,7 @@ nav ul li .last:hover {
     display: flex;
     align-items: center;
     overflow-x: auto;
+    flex-direction: row;
     padding: 32px;
     padding-top: 0;
     padding-bottom: 0;
