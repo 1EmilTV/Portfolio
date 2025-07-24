@@ -241,8 +241,87 @@
                 </div>
             </div>
         </section>
-        <section class="special" id="special"></section>
-        <section class="contact" id="contact"></section>
+        <section class="special" id="special">
+            <div class="gender">
+                <h1 class="hidden hiddenleft">
+                    Welches Geschlecht hast du nach deinem Namen?
+                </h1>
+                <p class="hidden hiddenleft" style="transition-delay: 200ms">
+                    Hier kannst du herausfinden, welches Geschlecht du nach
+                    deinem Namen hast.
+                </p>
+                <!--<br>-->
+                <div class="row">
+                    <input
+                        type="text"
+                        class="hidden hiddenleft"
+                        style="transition-delay: 400ms"
+                        placeholder="Dein Vorname (optional: Nachname)"
+                        id="genderInput"
+                    />
+                    <p id="errorText"></p>
+                </div>
+                <button
+                    class="hidden hiddenleft"
+                    style="transition-delay: 400ms"
+                    id="genenderSubmit"
+                >
+                    Senden
+                </button>
+                <p id="resultText"></p>
+            </div>
+            <div class="age">
+                <h1 class="hidden hiddenleft">
+                    Welches Alter haben Personen mit deinem Namen
+                    durchschnittlich?
+                </h1>
+                <p class="hidden hiddenleft" style="transition-delay: 200ms">
+                    Hier kannst du herausfinden, wie alt Personen mit deinem
+                    Namen durchschnittlich sind.
+                </p>
+                <!--<br>-->
+                <div class="row">
+                    <input
+                        type="text"
+                        class="hidden hiddenleft"
+                        style="transition-delay: 400ms"
+                        placeholder="Dein Vorname (optional: Nachname)"
+                        id="ageInput"
+                    />
+                    <p id="errorText"></p>
+                </div>
+                <button
+                    class="hidden hiddenleft"
+                    style="transition-delay: 400ms"
+                    id="ageSubmit"
+                >
+                    Senden
+                </button>
+                <p id="resultText"></p>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contactform">
+                <form action="" class="hidden hiddenleft">
+                    <h1
+                        class="hidden hiddenleft"
+                        style="transition-delay: 200ms"
+                    >
+                        Kontaktiere mich!
+                    </h1>
+                    <hr />
+                    <input type="text" class="hidden hiddenleft" style="transition-delay: 200ms;" name="name" placeholder="Vorname"/>
+                    <input type="text" class="hidden hiddenleft" style="transition-delay: 200ms;" name="email" placeholder="E-Mail"/>
+                    <input type="text" class="hidden hiddenleft" style="transition-delay: 200ms;" name="betreff" placeholder="Betreff"/>
+                    <textarea name="nachricht" class="hidden hiddenleft" style="transition-delay: 200ms;" placeholder="Deine Nachricht..."></textarea>
+                    <div class="row">
+                        <input type="submit" class="hidden hiddenleft" style="transition-delay: 200ms;"/>
+                        <input type="reset" class="hidden hiddenleft" style="transition-delay: 400ms;"/>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer></footer>
     </body>
     <!-- 100% privacy-first analytics -->
     <script
