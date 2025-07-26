@@ -408,14 +408,24 @@ nav ul li .last:hover {
 .about .left .icons .fa-node,
 .about .left .icons .fa-php,
 .about .left .icons .fa-python {
-    transition: all 0.2s linear;
+    transition: filter 0.2s linear;
+}
+
+.about .left .icons .fa-node#show {
+    transition: opacity 1s ease 200ms, transform 1s ease 200ms;
+}
+.about .left .icons .fa-php#show {
+    transition: opacity 1s ease 400ms, transform 1s ease 400ms;
+}
+.about .left .icons .fa-python#show {
+    transition: opacity 1s ease 600ms, transform 1s ease 600ms;
 }
 
 .about .left .icons .fa-node:hover,
 .about .left .icons .fa-php:hover,
 .about .left .icons .fa-python:hover {
     filter: drop-shadow(2.5px 2.5px 5px #cccccc);
-    transition: all 0.2s linear;
+    transition: filter 0.2s linear;
 }
 
 .about .right {
@@ -431,6 +441,10 @@ nav ul li .last:hover {
     font-weight: 600;
     text-shadow: 0px 0px 25px #dadada;
     font-style: italic;
+}
+
+.about .right h1#show {
+    transition: opacity 1s ease 200ms, transform 1s ease 200ms;
 }
 
 .projects {
@@ -455,9 +469,21 @@ nav ul li .last:hover {
     transition: opacity 0.5s ease;
 }
 
+.filter-buttons .secondBtn#show {
+    transition: opacity 1s ease 200ms, transform 1s ease 200ms;
+}
+
+.filter-buttons .thirdBtn#show {
+    transition: opacity 1s ease 400ms, transform 1s ease 400ms;
+}
+
+.filter-buttons .fourthBtn#show {
+    transition: opacity 1s ease 600ms, transform 1s ease 600ms;
+}
+
 .filter-buttons button:not(.active) {
     opacity: 0.5 !important;
-    transition: opacity 0.5s ease, transform 1s ease !important;
+    transition: opacity 0.5s ease, transform 1s ease;
 }
 
 .cards-container {
@@ -501,6 +527,10 @@ nav ul li .last:hover {
     margin-left: 1rem;
 }
 
+.card p#show {
+    transition: opacity 1s ease 200ms, transform 1s ease 200ms;
+}
+
 .card button#show {
     align-self: flex-end;
     margin-right: 1rem;
@@ -510,15 +540,15 @@ nav ul li .last:hover {
     outline: none;
     width: 25%;
     border: 2px solid var(--text-orange-light);
-    transition: background-color 0.3s ease, color 0.3s ease, opacity 1s ease,
-        transform 1s ease;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        opacity 1s ease 400ms, transform 1s ease 400ms;
 }
 
 .card button#show:hover {
     background-color: var(--text-orange-light);
     color: var(--text-bright);
-    transition: background-color 0.3s ease, color 0.3s ease, opacity 1s ease,
-        transform 1s ease;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        opacity 1s ease 400ms, transform 1s ease 400ms;
 }
 
 /* Sichtbare Karten reinfahren */
@@ -554,4 +584,286 @@ nav ul li .last:hover {
 
 .horcards::-webkit-scrollbar {
     display: none;
+}
+
+.special {
+    display: flex;
+    flex-direction: column;
+}
+
+.special .gender,
+.special .age {
+    width: 100%;
+    height: 50%;
+}
+
+.gender,
+.age {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+.gender {
+    margin-bottom: -5vh;
+    margin-top: 10vh;
+}
+
+.age {
+    margin-top: -5vh;
+}
+
+.gender div,
+.gender button,
+.age div,
+.age button {
+    margin-left: 2.5%;
+}
+
+.gender p,
+.age p {
+    margin-left: 1%;
+    color: #6f6f6f;
+    margin-bottom: 3vh;
+}
+
+.gender .delayp#show,
+.age .delayp#show {
+    transition: opacity 1s ease 200ms, transform 1s ease 200ms;
+}
+
+.gender .row,
+.age .row {
+    display: flex;
+    gap: 1.5vw;
+    width: 100%;
+}
+
+.gender .row p,
+.age .row p {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    color: #ff6060;
+}
+
+.gender .row input,
+.age .row input {
+    padding: 0.5vh 0.5vw;
+    border: 2px solid var(--text-orange-light);
+    border-radius: 10px;
+    margin-bottom: 1.5vh;
+    outline: none;
+    width: 25%;
+}
+
+.gender .row input#show,
+.age .row input#show {
+    transition: box-shadow 0.3s ease, opacity 1s ease 400ms,
+        transform 1s ease 400ms;
+}
+
+.gender .row input#show:focus,
+.age .row input#show:focus {
+    box-shadow: 1px 1px 7.5px #686868;
+    transition: box-shadow 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+
+.gender button,
+.age button {
+    padding: 0.5vh 0.5vw;
+    border: 2px solid var(--text-orange-light);
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 2vh;
+}
+
+.gender button#show,
+.age button#show {
+    transition: color 0.3s ease, background-color 0.3s ease,
+        opacity 1s ease 500ms, transform 1s ease 500ms;
+}
+
+.gender button#show:hover,
+.age button#show:hover {
+    color: white;
+    background-color: var(--text-orange-light);
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease,
+        opacity 1s ease 500ms, transform 1s ease 500ms;
+}
+
+#resultTextAge,
+#resultTextGender {
+    color: var(--text-dark);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform {
+    width: 50vw;
+    height: 65vh;
+    border: 2px solid var(--text-orange-light);
+    border-radius: 25px;
+    padding: 2vh 2vw;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+form h1 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: clamp(0.75rem, 2rem, 3rem);
+}
+
+form hr {
+    width: 100%;
+    border: 2px solid var(--text-orange-light);
+    border-radius: 20px;
+    margin-bottom: 5vh;
+}
+
+form .topInput {
+    padding: 0.5vh 0.5vw;
+    border: 2px solid var(--text-orange-light);
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    width: 100%;
+    outline: none;
+}
+
+form .topInput.topFirst#show {
+    transition: opacity 1s ease 200ms, transform 1s ease 200ms;
+}
+
+form .topInput.topSec#show {
+    transition: opacity 1s ease 400ms, transform 1s ease 400ms;
+}
+
+form .topInput.topThird#show {
+    transition: opacity 1s ease 600ms, transform 1s ease 600ms;
+}
+
+form .topFourth#show {
+    transition: opacity 1s ease 800ms, transform 1s ease 800ms;
+}
+
+form .topInput#show {
+    transition: box-shadow 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+
+form .topInput#show:focus {
+    box-shadow: 1px 1px 7.5px #686868;
+    transition: box-shadow 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+
+form textarea {
+    width: 100%;
+    height: auto;
+    min-height: 10em;
+    max-height: 10em;
+    padding: 0.5vh 0.5vw;
+    border: 2px solid var(--text-orange-light);
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+}
+
+form .row {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+form .row .bottomInput {
+    width: 45%;
+    border: 2px solid var(--text-orange-light);
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 0.5vh 0.5vw;
+}
+
+form .row .bottomInput#show {
+    transition: color 0.3s ease, background-color 0.3s ease, opacity 1s ease,
+        transform 1s ease;
+}
+
+form .row .bottomInput:hover {
+    background-color: var(--text-orange-light);
+    color: white;
+}
+
+form .row .bottomInput:hover#show {
+    transition: color 0.3s ease, background-color 0.3s ease, opacity 1s ease,
+        transform 1s ease;
+}
+
+form .row .bottomInput.bottomFirst#show {
+    transition: color 0.3s ease, background-color 0.3s ease,
+        opacity 1s ease 1000ms, transform 1s ease 1000ms;
+}
+
+form .row .bottomInput.bottomSec#show {
+    transition: color 0.3s ease, background-color 0.3s ease,
+        opacity 1s ease 1100ms, transform 1s ease 1100ms;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-grey-dark);
+    padding: 5vh 0;
+}
+
+footer .left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+
+footer .left a {
+    color: var(--text-bright);
+    margin-bottom: 0.5vh;
+    transition: all 0.3s ease;
+}
+
+footer .left a:hover {
+    color: #9c9c9c;
+    transition: all 0.3s ease;
+}
+
+footer .middle {
+    color: var(--text-bright);
+}
+
+footer .right {
+    padding-right: 2vw;
+}
+
+footer .right a {
+    color: var(--text-bright);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer .right a:hover {
+    color: #9c9c9c;
+    transition: all 0.3s ease;
 }

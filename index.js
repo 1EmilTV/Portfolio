@@ -81,3 +81,55 @@ function filterCards(category) {
 }
 
 filterCards("all");
+
+const regex = new RegExp("^[A-Z][a-z]+$");
+
+const genderInput = document.getElementById("genderInput");
+const genderBtn = document.getElementById("genderSubmit");
+const genderError = document.getElementById("errorTextGender");
+const genderResult = document.getElementById("resultTextGender");
+
+genderBtn.addEventListener("click", async () => {
+    genderError.innerText = " ";
+    try {
+        const name = genderInput.value;
+        if (!regex.test(name)) {
+            throw new Error("Bitte einen Namen eingeben.");
+            return;
+        }
+        const data = await fetch(`https://api.genderize.io?name=${name}`);
+        const response = await data.json();
+        const gender = response.gender === "male" ? "männlich" : "weiblich";
+        genderResult.innerText = `Dein Geschlecht mit dem Namen ${name} ist zu ${
+            response.probability * 100
+        }% ${gender}.`;
+    } catch (e) {
+        genderError.innerText = e.toString().replace(/^Error:\s*/, "");
+    }
+});
+
+const ageInput = document.getElementById("ageInput");
+const ageBtn = document.getElementById("ageSubmit");
+const ageError = document.getElementById("errorTextAge");
+const ageResult = document.getElementById("resultTextAge");
+
+ageBtn.addEventListener("click", async () => {
+    ageError.innerText = " ";
+    try {
+        const name = ageInput.value;
+        if (!regex.test(name)) {
+            throw new Error("Bitte einen Namen eingeben.");
+            return;
+        }
+        const data = await fetch(`https://api.agify.io?name=${name}`);
+        const response = await data.json();
+        ageResult.innerText = `Dein Alter nach deinem Namen ${name} ist durchschnittlich ${response.age} Jahre.`;
+    } catch (e) {
+        ageError.innerText = e.toString().replace(/^Error:\s*/, "");
+    }
+});
+
+const yearText = document.getElementById("year");
+
+const currYear = new Date().getFullYear();
+yearText.innerText = currYear;

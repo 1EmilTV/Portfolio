@@ -11,6 +11,12 @@
             src="https://kit.fontawesome.com/facb2e698a.js"
             crossorigin="anonymous"
         ></script>
+        <script
+            id="Cookiebot"
+            src="https://consent.cookiebot.com/uc.js"
+            data-cbid="cd576510-a8a5-414b-a3c7-fa59158f29e6"
+            type="text/javascript"
+        ></script>
     </head>
     <body>
         <nav>
@@ -93,7 +99,7 @@
         </section>
         <section class="about" id="about">
             <div class="left">
-                <p class="hidden hiddenleft" style="transition-delay: 200ms">
+                <p class="hidden hiddenleft">
                     Mein Name ist Emil, ich bin 16 Jahre alt und gehe momentan
                     in die 11. Klasse eines Gymnasiums. <br />
                     Als LK habe ich Mathe und Physik gewählt, da dies mit
@@ -117,18 +123,9 @@
                     <a href="#contact">hier</a>.-->
                 </p>
                 <div class="icons">
-                    <i
-                        class="fa-brands fa-node hidden hiddenright"
-                        style="transition-delay: 400ms"
-                    ></i
-                    ><i
-                        class="fa-brands fa-php hidden hiddenright"
-                        style="transition-delay: 600ms"
-                    ></i
-                    ><i
-                        class="fa-brands fa-python hidden hiddenright"
-                        style="transition-delay: 800ms"
-                    ></i>
+                    <i class="fa-brands fa-node hidden hiddenright"></i
+                    ><i class="fa-brands fa-php hidden hiddenright"></i
+                    ><i class="fa-brands fa-python hidden hiddenright"></i>
                 </div>
             </div>
             <div class="right">
@@ -140,30 +137,27 @@
                 <button
                     onclick="filterCards('all')"
                     id="all"
-                    class="hidden hiddentop active"
+                    class="hidden hiddentop active firstBtn"
                 >
                     Alle Projekte
                 </button>
                 <button
                     onclick="filterCards('big')"
                     id="big"
-                    class="hidden hiddentop"
-                    style="transition-delay: 200ms !important"
+                    class="hidden hiddentop secondBtn"
                 >
                     Große Projekte
                 </button>
                 <button
                     onclick="filterCards('small')"
                     id="small"
-                    class="hidden hiddentop"
-                    style="transition-delay: 400ms !important"
+                    class="hidden hiddentop thirdBtn"
                 >
                     Kleinere Projekte
                 </button>
                 <button
                     onclick="filterCards('school')"
-                    class="hidden hiddentop"
-                    style="transition-delay: 600ms !important"
+                    class="hidden hiddentop fourthBtn"
                 >
                     Schulprojekte
                 </button>
@@ -173,10 +167,7 @@
                 <div class="topcards horcards">
                     <div class="card" data-category="school">
                         <h2 class="hidden hiddenleft">American-Album</h2>
-                        <p
-                            class="hidden hiddenleft"
-                            style="transition-delay: 200ms"
-                        >
+                        <p class="hidden hiddenleft">
                             Ein Schulprojekt, bei dem wir ein "American-Album"
                             erstellen mussten, bei dem wir 5 unterschiedliche
                             Aspekte der amerikanischen Kultur behandeln sollten.
@@ -190,10 +181,7 @@
                     </div>
                     <div class="card" data-category="big">
                         <h2 class="hidden hiddenleft">Spiel Website</h2>
-                        <p
-                            class="hidden hiddenleft"
-                            style="transition-delay: 200ms"
-                        >
+                        <p class="hidden hiddenleft">
                             Die Website habe ich fast am Anfang gemacht, um ein
                             paar Tutorials zu realisieren.
                         </p>
@@ -208,10 +196,7 @@
                 <div class="bottomcards horcards">
                     <div class="card" data-category="big">
                         <h2 class="hidden hiddenleft">Home-App</h2>
-                        <p
-                            class="hidden hiddenleft"
-                            style="transition-delay: 200ms"
-                        >
+                        <p class="hidden hiddenleft">
                             Eine Webapp für meine Familie, mit der man den
                             anderen Aufgaben geben kann.
                         </p>
@@ -224,10 +209,7 @@
                     </div>
                     <div class="card" data-category="small">
                         <h2 class="hidden hiddenleft">Idle Breakout</h2>
-                        <p
-                            class="hidden hiddenleft"
-                            style="transition-delay: 200ms"
-                        >
+                        <p class="hidden hiddenleft">
                             Hier habe ich probiert eine einfache Version von
                             Idle Breakout zu machen. Sehr einfach.
                         </p>
@@ -246,7 +228,7 @@
                 <h1 class="hidden hiddenleft">
                     Welches Geschlecht hast du nach deinem Namen?
                 </h1>
-                <p class="hidden hiddenleft" style="transition-delay: 200ms">
+                <p class="hidden hiddenleft delayp">
                     Hier kannst du herausfinden, welches Geschlecht du nach
                     deinem Namen hast.
                 </p>
@@ -255,27 +237,22 @@
                     <input
                         type="text"
                         class="hidden hiddenleft"
-                        style="transition-delay: 400ms"
-                        placeholder="Dein Vorname (optional: Nachname)"
+                        placeholder="Dein Vorname"
                         id="genderInput"
                     />
-                    <p id="errorText"></p>
+                    <p id="errorTextGender"></p>
                 </div>
-                <button
-                    class="hidden hiddenleft"
-                    style="transition-delay: 400ms"
-                    id="genenderSubmit"
-                >
+                <button class="hidden hiddenleft" id="genderSubmit">
                     Senden
                 </button>
-                <p id="resultText"></p>
+                <p id="resultTextGender"></p>
             </div>
             <div class="age">
                 <h1 class="hidden hiddenleft">
                     Welches Alter haben Personen mit deinem Namen
                     durchschnittlich?
                 </h1>
-                <p class="hidden hiddenleft" style="transition-delay: 200ms">
+                <p class="hidden hiddenleft delayp">
                     Hier kannst du herausfinden, wie alt Personen mit deinem
                     Namen durchschnittlich sind.
                 </p>
@@ -284,44 +261,73 @@
                     <input
                         type="text"
                         class="hidden hiddenleft"
-                        style="transition-delay: 400ms"
-                        placeholder="Dein Vorname (optional: Nachname)"
+                        placeholder="Dein Vorname"
                         id="ageInput"
                     />
-                    <p id="errorText"></p>
+                    <p id="errorTextAge"></p>
                 </div>
-                <button
-                    class="hidden hiddenleft"
-                    style="transition-delay: 400ms"
-                    id="ageSubmit"
-                >
-                    Senden
-                </button>
-                <p id="resultText"></p>
+                <button class="hidden hiddenleft" id="ageSubmit">Senden</button>
+                <p id="resultTextAge"></p>
             </div>
         </section>
         <section class="contact" id="contact">
-            <div class="contactform">
-                <form action="" class="hidden hiddenleft">
-                    <h1
-                        class="hidden hiddenleft"
-                        style="transition-delay: 200ms"
-                    >
-                        Kontaktiere mich!
-                    </h1>
+            <div class="contactform hidden hiddenleft">
+                <form name="contact" class="hidden hiddenleft" netlify>
+                    <h1 class="hidden hiddenleft">Kontaktiere mich!</h1>
                     <hr />
-                    <input type="text" class="hidden hiddenleft" style="transition-delay: 200ms;" name="name" placeholder="Vorname"/>
-                    <input type="text" class="hidden hiddenleft" style="transition-delay: 200ms;" name="email" placeholder="E-Mail"/>
-                    <input type="text" class="hidden hiddenleft" style="transition-delay: 200ms;" name="betreff" placeholder="Betreff"/>
-                    <textarea name="nachricht" class="hidden hiddenleft" style="transition-delay: 200ms;" placeholder="Deine Nachricht..."></textarea>
+                    <input
+                        type="text"
+                        class="hidden hiddenleft topInput topFirst"
+                        name="name"
+                        placeholder="Vorname"
+                    />
+                    <input
+                        type="text"
+                        class="hidden hiddenleft topInput topSec"
+                        name="email"
+                        placeholder="E-Mail"
+                    />
+                    <input
+                        type="text"
+                        class="hidden hiddenleft topInput topThird"
+                        name="betreff"
+                        placeholder="Betreff"
+                    />
+                    <textarea
+                        name="nachricht"
+                        class="hidden hiddenleft topFourth"
+                        placeholder="Deine Nachricht... (max. 200 Zeichen)"
+                        maxlength="200"
+                        rows="10"
+                    ></textarea>
                     <div class="row">
-                        <input type="submit" class="hidden hiddenleft" style="transition-delay: 200ms;"/>
-                        <input type="reset" class="hidden hiddenleft" style="transition-delay: 400ms;"/>
+                        <input
+                            type="submit"
+                            class="hidden hiddenleft bottomInput bottomFirst"
+                        />
+                        <input
+                            type="reset"
+                            class="hidden hiddenleft bottomInput bottomSec"
+                        />
                     </div>
                 </form>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+            <div class="left">
+                <a href="/impressum/impressum.html">Impressum</a>
+                <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+            </div>
+            <div class="middle">
+                &copy; <bdi id="year"></bdi> Emil Repmann - Alle Inhalte
+                urheberrechtlich geschützt. / All content protected by
+                copyright.
+            </div>
+            <div class="right">
+                <a href="https://github.com/1EmilTV/">GitHub</a>
+                <!--<a href="">LinkedIn</a>-->
+            </div>
+        </footer>
     </body>
     <!-- 100% privacy-first analytics -->
     <script

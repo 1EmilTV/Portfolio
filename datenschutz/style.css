@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+    /* Background colors */
+    --bg-grey: #eeeeee;
+    --bg-grey-dark: #333333;
+    --bg-white: #ffffff;
+    --bg-dark: #202020;
+
+    /* Text colors */
+    --text-dark: #000000;
+    --text-bright: #ffffff;
+    --text-grey: #2f2f2f;
+    --text-orange-light: #ff8827;
+    --text-orange-dark: #ea7e25;
+
+    /* Scroll Animations */
+    /* --animation-play-on-scroll: scroll(); */
+    /* --fade-in-left-show: opacity 1, transform(translateX(0));
+    --fade-in-left-hide: opacity 0, transform(translateX(-20px));
+    --fade-in-top-show: opacity 1, transform(translateY(0));
+    --fade-in-top-hide: opacity 0, transform(translateY(-20px));
+    --fade-in-right-show: opacity 1, transform(translateX(0));
+    --fade-in-right-hide: opacity 0, transform(translateX(20px));
+    --fade-in-bottom-show: opacity 1, transform(translateY(0));
+    --fade-in-bottom-hide: opacity 0, transform(translateY(20px)); */
+
+    /* Animation Delay */
+    /* --delay-2nd: 200ms;
+    --delay-3rd: 400ms;
+    --delay-4th: 600ms;
+    --delay-5th: 800ms;
+    --delay-6th: 1000ms; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", "Open Sans", "Playfair Display", Arial,
+        Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    min-height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+p {
+    margin-left: 2vw;
+}
+
+button {
+    margin: 2vh 2vw;
+    padding: 0.5vh 0.5vw;
+    border: 2px solid var(--text-orange-light);
+    border-radius: 10px;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--text-orange-light);
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+a {
+    color: #005bbb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
