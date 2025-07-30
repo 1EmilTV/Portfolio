@@ -6,21 +6,55 @@
         <title>Portfolio - Emil</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="src/favicon.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            type="text/css"
+            data-cookieconsent="marketing"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+            type="text/css"
+            data-cookieconsent="marketing"
+        />
         <script src="index.js" defer></script>
         <script
             src="https://kit.fontawesome.com/facb2e698a.js"
             crossorigin="anonymous"
         ></script>
+        <!-- data-cookieconsent="marketing"
+        type="text/plain" -->
         <script
             id="Cookiebot"
             src="https://consent.cookiebot.com/uc.js"
             data-cbid="cd576510-a8a5-414b-a3c7-fa59158f29e6"
             type="text/javascript"
         ></script>
+        <!-- 100% privacy-first analytics
+        <script
+            async
+            src="https://scripts.simpleanalyticscdn.com/latest.js"
+        ></script> -->
+        <script
+            type="text/plain"
+            data-cookieconsent="statistics"
+            async
+            src="https://scripts.simpleanalyticscdn.com/latest.js"
+        ></script>
+        <noscript
+            ><img
+                src="https://queue.simpleanalyticscdn.com/noscript.gif"
+                alt=""
+        /></noscript>
     </head>
     <body>
         <nav>
             <p><a href="#home">emil</a></p>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Über mich</a></li>
@@ -33,7 +67,8 @@
             <div class="top">
                 <div class="left">
                     <h1>
-                        Hallo, ich bin <bdi class="landingheading">Emil</bdi>
+                        Hallo, <br />ich bin
+                        <bdi class="landingheading">Emil</bdi>
                     </h1>
                     <h2>
                         Ich bin
@@ -179,19 +214,6 @@
                             Zur Website
                         </button>
                     </div>
-                    <div class="card" data-category="big">
-                        <h2 class="hidden hiddenleft">Spiel Website</h2>
-                        <p class="hidden hiddenleft">
-                            Die Website habe ich fast am Anfang gemacht, um ein
-                            paar Tutorials zu realisieren.
-                        </p>
-                        <button
-                            class="hidden hiddenleft"
-                            onclick="if(screen.width >= 769) {window.open('https://spiel-website.netlify.app/','_blank');} else {location.href='https://spiel-website.netlify.app/'}"
-                        >
-                            Zur Website
-                        </button>
-                    </div>
                 </div>
                 <div class="bottomcards horcards">
                     <div class="card" data-category="big">
@@ -242,9 +264,19 @@
                     />
                     <p id="errorTextGender"></p>
                 </div>
-                <button class="hidden hiddenleft" id="genderSubmit">
-                    Senden
-                </button>
+                <div class="sendBtn">
+                    <button class="hidden hiddenleft" id="genderSubmit">
+                        Senden
+                    </button>
+                    <span
+                        class="tooltip"
+                        aria-label="Beim Senden wird eine externe API aufgerufen. Dabei können personenbezogene Daten (z. B. IP-Adresse) verarbeitet werden."
+                    >
+                        <i
+                            class="fa-solid fa-circle-info hidden hiddenleft"
+                        ></i>
+                    </span>
+                </div>
                 <p id="resultTextGender"></p>
             </div>
             <div class="age">
@@ -266,7 +298,19 @@
                     />
                     <p id="errorTextAge"></p>
                 </div>
-                <button class="hidden hiddenleft" id="ageSubmit">Senden</button>
+                <div class="sendBtn">
+                    <button class="hidden hiddenleft" id="ageSubmit">
+                        Senden
+                    </button>
+                    <span
+                        class="tooltip"
+                        aria-label="Beim Senden wird eine externe API aufgerufen. Dabei können personenbezogene Daten (z. B. IP-Adresse) verarbeitet werden."
+                    >
+                        <i
+                            class="fa-solid fa-circle-info hidden hiddenleft"
+                        ></i>
+                    </span>
+                </div>
                 <p id="resultTextAge"></p>
             </div>
         </section>
@@ -329,9 +373,4 @@
             </div>
         </footer>
     </body>
-    <!-- 100% privacy-first analytics -->
-    <script
-        async
-        src="https://scripts.simpleanalyticscdn.com/latest.js"
-    ></script>
 </html>

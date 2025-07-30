@@ -30,15 +30,65 @@ document.querySelectorAll(".filter-buttons button").forEach((button) => {
     });
 });
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.id = "show";
-        } else {
-            entry.target.id = " ";
-        }
-    });
+// document.querySelector("nav i").addEventListener("click", () => {
+//     document.querySelector("nav ul").classList.toggle("show");
+//     document.querySelector("nav").classList.toggle("menu-open");
+// });
+
+// Menu functionality
+const nav = document.querySelector("nav");
+const menuBtn = document.querySelector("nav i");
+const menuList = document.querySelector("nav ul");
+const menuIcon = document.querySelector(".menu-icon");
+
+// Toggle menu
+const toggleMenu = () => {
+    nav.classList.toggle("menu-open");
+    menuList.classList.toggle("show");
+};
+
+// Close menu
+const closeMenu = () => {
+    nav.classList.remove("menu-open");
+    menuList.classList.remove("show");
+};
+
+// Event listeners
+menuBtn.addEventListener("click", toggleMenu);
+menuIcon.addEventListener("click", toggleMenu);
+
+// Close menu when clicking menu items
+menuList.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
 });
+
+// Close menu when scrolling
+let lastScroll = 0;
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (Math.abs(currentScroll - lastScroll) > 50) {
+        // Add threshold to prevent tiny scrolls
+        closeMenu();
+        lastScroll = currentScroll;
+    }
+});
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            // Only trigger when card is at least 90% visible
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.9) {
+                entry.target.id = "show";
+            } else {
+                entry.target.id = " ";
+            }
+        });
+    },
+    {
+        threshold: 0.9, // Trigger when 90% of element is visible
+        rootMargin: "0px", // Don't extend the observation area
+    }
+);
 
 const hiddenelements = document.querySelectorAll(".hidden");
 hiddenelements.forEach((el) => observer.observe(el));
