@@ -427,12 +427,12 @@ nav ul li .last:hover {
 .about .left {
     width: 50%;
     margin-left: 5%;
-    font-size: 1.25rem;
+    font-size: clamp(0.5rem, 1.25rem, 2.5rem);
 }
 
 .about .left .icons {
     margin-top: 1.5vh;
-    font-size: 2rem;
+    font-size: clamp(0.5rem, 2rem, 4rem);
     color: var(--text-orange-dark);
 }
 
@@ -473,7 +473,7 @@ nav ul li .last:hover {
 
 .about .right h1 {
     font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
-    font-size: clamp(1.5rem, 3.5rem, 6rem);
+    font-size: clamp(1rem, 3.5rem, 6rem);
     font-weight: 600;
     text-shadow: 0px 0px 25px #dadada;
     font-style: italic;
@@ -1009,6 +1009,11 @@ footer .right a:hover {
         display: none;
     }
 
+    .landing .top .left .break::after {
+        content: "\A"; /* Line break character */
+        white-space: pre; /* Preserve the line break */
+    }
+
     nav {
         padding: 0.5vh 5vw;
         border-radius: 25px 25px 25px 25px;
@@ -1017,6 +1022,7 @@ footer .right a:hover {
 
     nav.menu-open {
         border-radius: 25px 25px 0 0;
+        box-shadow: none;
     }
 
     .menu-icon {
@@ -1037,6 +1043,7 @@ footer .right a:hover {
         padding: 1.5rem;
         border-radius: 0 0 25px 25px;
         box-shadow: 0px 4px 5px #cfcfcf;
+        border-top: none;
         opacity: 0;
         transform: translateY(-20px);
         pointer-events: none;
@@ -1059,5 +1066,121 @@ footer .right a:hover {
         width: 100%;
         margin: 0;
         padding: 0.5vh 3vw;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        padding: 2vh 1vw;
+    }
+
+    .about .right {
+        width: 100%;
+        padding: 0.5vh 0.5vw;
+    }
+
+    .about .right h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .about .left {
+        width: 90%;
+        margin: 0;
+    }
+
+    .about .left p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .projects {
+        box-sizing: border-box;
+    }
+
+    .filter-buttons {
+        width: 100%;
+    }
+
+    .filter-buttons button {
+        margin-left: 5vw;
+    }
+
+    .filter-buttons .firstBtn {
+        margin-bottom: 1.5vh;
+    }
+
+    .card {
+        width: 75vw;
+        height: 90%;
+    }
+
+    .card h1 {
+        font-size: 2rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .card button#show {
+        width: 50%;
+    }
+
+    .cards-container {
+        height: calc(100% - 80px);
+        box-sizing: border-box;
+    }
+
+    .gender,
+    .age {
+        padding-left: 5%;
+    }
+
+    .gender .row input,
+    .age .row input {
+        width: 30%;
+        padding: 0.5vh 1vw;
+    }
+
+    .gender .row p,
+    .age .row p {
+        width: 50%;
+    }
+
+    .gender button#show,
+    .age button#show {
+        padding: 0.5vh 2vw;
+        margin-right: 2vw;
+    }
+
+    .contactform {
+        height: 75vh;
+        margin-left: 0;
+    }
+
+    .contactform form input,
+    .contactform form textarea {
+        padding: 0.5vh 1vw;
+    }
+
+    .contactform form .row input {
+        padding: 0.5vh 2vw;
+    }
+
+    .contactform form .row .bottomSec {
+        width: fit-content;
+        margin-left: 2.5vw;
+    }
+
+    footer {
+        gap: 5vw;
+    }
+
+    footer .left a,
+    footer .middle,
+    footer .right a {
+        font-size: 0.75rem;
     }
 }

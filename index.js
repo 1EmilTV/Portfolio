@@ -76,8 +76,8 @@ window.addEventListener("scroll", () => {
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            // Only trigger when card is at least 90% visible
-            if (entry.isIntersecting && entry.intersectionRatio >= 0.9) {
+            // Only trigger when card is at least 50% visible
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
                 entry.target.id = "show";
             } else {
                 entry.target.id = " ";
@@ -85,7 +85,7 @@ const observer = new IntersectionObserver(
         });
     },
     {
-        threshold: 0.9, // Trigger when 90% of element is visible
+        threshold: 0.5, // Trigger when 50% of element is visible
         rootMargin: "0px", // Don't extend the observation area
     }
 );
