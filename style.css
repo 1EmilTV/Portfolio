@@ -108,6 +108,10 @@
     }
 } */
 
+button#show {
+    color: var(--text-dark);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -902,11 +906,13 @@ form .row .bottomInput:hover#show {
 }
 
 form .row .bottomInput.bottomFirst#show {
+    color: var(--text-dark);
     transition: color 0.3s ease, background-color 0.3s ease,
         opacity 1s ease 1000ms, transform 1s ease 1000ms;
 }
 
 form .row .bottomInput.bottomSec#show {
+    color: var(--text-grey);
     transition: color 0.3s ease, background-color 0.3s ease,
         opacity 1s ease 1100ms, transform 1s ease 1100ms;
 }
