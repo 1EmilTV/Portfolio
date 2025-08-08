@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Impressum</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="/src/favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <button onclick="location.href='/index.html'">Zurück</button>
+        <main>
+            <h1>Impressum</h1>
+
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>
+                Emil Repmann<br />
+                E-Mail: <a href="mailto:help@emil-dev.me">help@emil-dev.me</a>
+            </p>
+
+            <h2>Haftung für Inhalte</h2>
+            <p>
+                Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt.
+                Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+                kann ich jedoch keine Gewähr übernehmen.
+            </p>
+
+            <h2>Haftung für Links</h2>
+            <p>
+                Mein Angebot enthält Links zu externen Websites Dritter, auf
+                deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für
+                diese fremden Inhalte auch keine Gewähr übernehmen. Für die
+                Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+                oder Betreiber verantwortlich.
+            </p>
+
+            <h2>Urheberrecht</h2>
+            <p>
+                Die durch mich erstellten Inhalte und Werke auf dieser Website
+                unterliegen dem deutschen Urheberrecht. Eine Vervielfältigung,
+                Bearbeitung, Verbreitung oder sonstige Verwertung ist nur mit
+                meiner ausdrücklichen Zustimmung gestattet.
+            </p>
+
+            <p style="margin-top: 2rem; font-size: 0.95rem; color: #555">
+                © <bdi id="year"></bdi> Emil Repmann – Alle Rechte vorbehalten.
+            </p>
+        </main>
+    </body>
+    <script>
+        const yearText = document.getElementById("year");
+
+        const currYear = new Date().getFullYear();
+        yearText.innerText = currYear;
+    </script>
+</html>
