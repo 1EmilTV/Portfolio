@@ -521,6 +521,10 @@ nav ul li .last:hover {
     transition: opacity 1s ease 600ms, transform 1s ease 600ms;
 }
 
+.filter-buttons button#show {
+    color: white;
+}
+
 .filter-buttons button:not(.active) {
     opacity: 0.5 !important;
     transition: opacity 0.5s ease, transform 1s ease;
